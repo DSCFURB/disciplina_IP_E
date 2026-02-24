@@ -1,7 +1,7 @@
 <!-- [@] INICIO atualizar -->
 [AVA3]: <https://ava3.furb.br/course/view.php?id=53161&section=0> "AVA3"  
 [Plano de Ensino]: <https://ava3.furb.br/course/view.php?id=53161&section=1> "Plano de Ensino"  
-[Cronograma]: <./cronograma_IP_A.pdf> "cronograma_IP_A.pdf"  
+[Cronograma]: <./IntroducaoProgramacao-20261.pdf> "cronograma_IP_A.pdf"  
 [Monitoria]: <https://dscfurb.github.io/dsc/indexMonitores.html> "Monitoria"  
 [Prova de Suficiência (inscrição)]: <https://forms.office.com/r/rdGSUBmFq2> "Prova de Suficiência (inscrição)"
 [Ambiente de Desenvolvimento Prático]: <Unidade1/IDE.md> "Ambiente de Desenvolvimento Prático"  
@@ -12,7 +12,7 @@
 
 Olá, seja bem vindo .. 😁  
 
-Este é o principal material da disciplina de Introdução à Programação, e ele está sendo disponibilizado no GitHub. O conteúdo está dividido em 6 (seis) unidades (pastas), seguindo o proposto no plano de ensino. Cada unidade tem um texto de apoio e suas respectivas videoaulas, atividades, e ainda, várias anotações feitas em aula.
+Este é o principal material da disciplina de Introdução à Programação, e ele está sendo disponibilizado no GitHub. O conteúdo está dividido em 7 (sete) unidades (pastas), seguindo o proposto no plano de ensino. Cada unidade tem um texto de apoio e suas respectivas videoaulas, atividades, e ainda, várias anotações feitas em aula.
 
 Para se localizar em relação aos dias de aula e o conteúdo que está sendo passado utilize o [Cronograma].
 
