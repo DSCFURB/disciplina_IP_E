@@ -14,7 +14,7 @@ Para instalar o Java acesse o link
 
 [JavaDownLoad].  
 
-Selecionar Temurin 21 (LTS) ou uma versão mais recente. Clique no Último Lançamento, e assim irá baixar um arquivo .msi. Depois dê dois clicks no arquivo, … e alguns next … mas ATENÇÃO … se aparecer uma janela deste tipo
+Selecionar JDK Temurin 25.0.2+10-LTS ou uma versão mais recente. Clique no Último Lançamento, e assim irá baixar um arquivo .msi. Depois dê dois clicks no arquivo, … e alguns next … mas ATENÇÃO … se aparecer uma janela deste tipo
 
 ![Path do Java](../imgs/OpenJDKpath.png "Path do Java")
 
