@@ -3,7 +3,7 @@
 [Plano de Ensino]: <https://ava3.furb.br/course/view.php?id=53161&section=1> "Plano de Ensino"  
 [Cronograma]: <./IntroducaoProgramacao-20261.pdf> "cronograma_IP_A.pdf"  
 [Monitoria]: <https://dscfurb.github.io/dsc/indexMonitores.html> "Monitoria"  
-[Prova de Suficiência (inscrição)]: <https://forms.office.com/r/rdGSUBmFq2> "Prova de Suficiência (inscrição)"
+[Prova de Suficiência (inscrição)]: <https://forms.office.com/r/dVtdMzKAUV> "Prova de Suficiência (inscrição)"
 [Ambiente de Desenvolvimento Prático]: <Unidade1/IDE.md> "Ambiente de Desenvolvimento Prático"  
 [Trabalho Final]: <./TrabalhoFinal> "Trabalho Final"  
 [BeeCrowd - acesso professor]: <https://academic.beecrowd.com/en> "BeeCrowd"
