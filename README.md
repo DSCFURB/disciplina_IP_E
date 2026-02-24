@@ -22,8 +22,10 @@ Mas observe, as pastas serão disponibilizadas no decorrer do [Cronograma]. Assi
 
 Já para desenvolver a parte prática precisaremos de um computador (PC/Mac) com um dos sistemas operacionais: Windows, Linux ou MacOS. O material teórico (textos e videoaulas) até podem ser trabalhados com dispositivos móveis (smartphones ou tablets), mas a parte prática exige um equipamento desktop.
 
-## Atenção  
+## E-mail e Teams da monitora Laura
+lmoller@furb.br
 
+## Atenção  
 Faça o seu trabalho, cópias receberão nota zero. O professor pode a qualquer momento questionar e avaliar o trabalho desenvolvido. O aluno deve demonstrar conhecimento do código implementado respondendo principalmente questões relacionadas ao conteúdo apresentado, e não somente saber "ler" o código desenvolvido.  
 
 ## Rabiscos - aulaRabiscos.drawio.svg
