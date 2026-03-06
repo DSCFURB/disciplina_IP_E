@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exe01Uni02 {
+public class Uni02Exe01 {
 
 
     public static void main(String[] args) {
