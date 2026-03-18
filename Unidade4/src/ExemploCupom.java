@@ -5,6 +5,7 @@ public class ExemploCupom {
     public static void main(String[] args) {
         //entrada de dados
         Scanner scanner = new Scanner(System.in);
+        scanner.
         System.out.print("Digite o valor do produto: ");
         double valorProduto = scanner.nextDouble();
         System.out.println ("Tem cupom?");
@@ -21,8 +22,7 @@ public class ExemploCupom {
               }
         }
         //calcular o valor final
-        System.out.println ("Valor a pagar: " + 
-                        (valorProduto - desconto));
+        System.out.printf ("Valor a pagar: %.2f\n", (valorProduto - desconto));
         //fechar o scanner  
         scanner.close();
     }
