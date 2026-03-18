@@ -82,7 +82,7 @@ O custo do selo de uma carta com até 50 gramas é de R$ 0,45. As cartas com pes
 
 | Exemplos de entrada | Exemplos de saída |
 | -------- | -------- |
-| 105 | 2.1375 |
+| 105 | 1.80 |
 | 50 | 0.45 |
 
 ----------
