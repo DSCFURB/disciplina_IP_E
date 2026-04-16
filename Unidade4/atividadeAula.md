@@ -234,6 +234,7 @@ Dadas as coordenadas (X e Y) de um Ponto, você deve informar em qual quadrante 
 > 2, se o x for negativo e o y, positivo 
 > 3, se os dois valores forem negativos  
 > 4, se o x for positivo e o y, negativo
+> Indefinido, se X ou Y forem zero.
 
 | Exemplos de entrada | Exemplos de saída |
 | -------- | -------- |
@@ -242,6 +243,8 @@ Dadas as coordenadas (X e Y) de um Ponto, você deve informar em qual quadrante 
 | X: -5 Y: 10 | Quadrante 2 |
 | X: -5 Y: -10 | Quadrante 3 |
 | X: 5 Y: -10 | Quadrante 4 |
+| X: 0 Y: 5 | Quadrante Indefinido |
+| X: 5 Y: 0 | Quadrante Indefinido |
 ----------
 
 ### Uni4Exe20.java
