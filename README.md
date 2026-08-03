@@ -1,7 +1,7 @@
 <!-- [@] INICIO atualizar -->
-[AVA3]: <https://ava3.furb.br/course/view.php?id=53161&section=0> "AVA3"  
-[Plano de Ensino]: <https://ava3.furb.br/course/view.php?id=53161&section=1> "Plano de Ensino"  
-[Cronograma]: <./IntroducaoProgramacao-20261.pdf> "cronograma_IP_A.pdf"  
+[AVA3]: <https://ava.furb.br/login/index.php> "AVA3"  
+[Plano de Ensino]: <https://ava.furb.br/login/index.php> "Plano de Ensino"  
+[Cronograma]: <./IntroducaoProgramacao-20262.pdf> "Cronograma"  
 [Monitoria]: <https://dscfurb.github.io/dsc/indexMonitores.html> "Monitoria"  
 [Prova de Suficiência (inscrição)]: <https://forms.office.com/r/dVtdMzKAUV> "Prova de Suficiência (inscrição)"
 [Ambiente de Desenvolvimento Prático]: <Unidade1/IDE.md> "Ambiente de Desenvolvimento Prático"  
@@ -12,7 +12,7 @@
 
 Olá, seja bem vindo .. 😁  aluno de Ciência de Dados
 
-Este é o principal material da disciplina de Introdução à Programação, e ele está sendo disponibilizado no GitHub. O conteúdo está dividido em 7 (sete) unidades (pastas), seguindo o proposto no plano de ensino. Cada unidade tem um texto de apoio e suas respectivas videoaulas, atividades, e ainda, várias anotações feitas em aula.
+Este é o principal material da disciplina de Introdução à Programação, e ele está sendo disponibilizado no GitHub. O conteúdo está dividido em 7 (sete) unidades (pastas), seguindo o proposto no plano de ensino. Cada unidade tem um texto de apoio e suas respectivas videoaulas, atividades e várias anotações feitas em aula.
 
 Para se localizar em relação aos dias de aula e o conteúdo que está sendo passado utilize o [Cronograma].
 
@@ -46,12 +46,7 @@ Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para
 [Ambiente de Desenvolvimento Prático]  
 [BeeCrowd - acesso professor]
 
-**Prazos**: geralmente o AVA3 é usado pelos professores para definirem prazos para atividades. Uma vez definido um prazo a atividade não pode ser entregue no AVA3, a não ser que o professor prorrogue o prazo. Não deixem para postar a atividade nos últimos minutos. Se for uma atividade que pode ser postada em partes, postem a medida que forem desenvolvendo. Só observem qual é o limite de enviou que foi definido no post do AVA3 para aquela atividade.
-
-**IMPORTANTE**: sempre consulte o [Cronograma] para verificar os prazos de entrega das atividades avaliativas.  
-
-Algumas dúvidas que devem ser resolvidas com os conteúdos das unidades abaixo podem ser vistas aqui: [dúvidas](<https://viewer.diagrams.net/?tags={}&p=ex&highlight=0000ff&edit=_blank&layers=1&nav=1&title=teste.drawio.svg#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1pc2VzUZDZm-QinR46nu2Yv4xEuzKIX52%26export%3Ddownload> "dúvidas")  
-<!-- FIXME: terminar os textos do diagrama acima, ter mais perguntas para cada unidade -->
+**Prazos**: geralmente o AVA é usado pelos professores para definirem prazos para atividades. Uma vez definido um prazo a atividade não pode ser entregue no AVA, a não ser que o professor prorrogue o prazo. Não deixem para postar a atividade nos últimos minutos. Se for uma atividade que pode ser postada em partes, postem a medida que forem desenvolvendo. Só observem qual é o limite de enviou que foi definido no post do AVA3 para aquela atividade.
 
 ## [Unidade1](./Unidade1 "Unidade1")
 
