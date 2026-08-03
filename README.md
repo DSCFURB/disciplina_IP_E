@@ -1,5 +1,5 @@
 <!-- [@] INICIO atualizar -->
-[AVA3]: <https://ava.furb.br/login/index.php> "AVA3"  
+[AVA]: <https://ava.furb.br/login/index.php> "AVA3"  
 [Plano de Ensino]: <https://ava.furb.br/login/index.php> "Plano de Ensino"  
 [Cronograma]: <./IntroducaoProgramacao-20262.pdf> "Cronograma"  
 [Monitoria]: <https://dscfurb.github.io/dsc/indexMonitores.html> "Monitoria"  
