@@ -38,7 +38,7 @@ Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para
 [Matriz curricular BCD](> "Matriz curricular BCD")  
 [Matriz curricular SIS](<https://www.furb.br/sites/default/files/2022-06/GRADE%20SISTEMAS%20DE%20INFO.pdf> "Matriz curricular SIS")  
 
-[AVA3]  
+[AVA]  
 [Plano de Ensino]  
 [Cronograma]  
 [Monitoria]  
@@ -60,6 +60,5 @@ Vocês irão notar que quando preciso fazer algum rabisco eu uso o Draw.io. Para
 
 ## [Unidade6](./Unidade6 "Unidade6")
 
-## [Trabalho Final]
+## [Unidade7](./Unidade7 "Unidade7")
 
-E, se conseguirmos chegar até aqui (ainda vivos)... então boas férias 😉
