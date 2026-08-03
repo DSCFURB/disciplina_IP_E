@@ -1,88 +1,81 @@
-# Introdução à Programação - Unidade 6
+# Introdução à Programação - Unidade 7
 
 Algumas anotações feitas em aula: [aulaAnotacoes.md](./aulaAnotacoes.md "aulaAnotacoes.md")
 
-## Tipos Estruturados
+## COMANDOS DE CONTROLE DE FLUXO: SUB-ROTINAS
 
-### [VideoAula_6 (30:10)](<https://furb.sharepoint.com/:v:/t/msteams_d5eac5-TCCsDSC/IQCFKdQgXidYRp1B3tS3nA2fAZtxHbIUrn1--rBBhk_FbJU?e=2qljgK> "link alternativo da videoaula da unidade 6")
+São rotinas (pequenos programas) que realizam uma determinada função específica.
 
-### Tipo Estruturados: exemplos
+- Permitem modularizar os programas.
 
-- Os problemas computacionais muitas vezes exigem o armazenamento de grande quantidade de dados em memória para posterior processamento.​
-- Exemplo 1: dado o nome de 50 pessoas, escrever estes dados em ordem alfabética.
-  - Problema: neste caso criaríamos uma variável para cada nome? E se fossem 1000 nomes?​
-- Exemplo 2: uma loja registrou em um dia a quantidade vendida de cada um de seus 200 produtos. Informe o código dos produtos que tiveram vendas acima da média.
-  - Problema: neste caso criaríamos 200 variáveis, uma para cada produto?​
-- Exemplo 3: a loja do exemplo 2 quer fazer um controle mensal de suas vendas. Para isto ela mantém os dados de cada um de seus produtos vendidos em cada dia do mês.
-  - Problema: quantas variáveis teríamos que criar neste caso?​
-- Exemplo 4: uma pessoa quer ir de uma cidade A até uma cidade F. Considerando que há vários caminhos possíveis e que são registradas as distâncias intermediárias entre as cidades (ex. de A a B, de B a C, de B a D, etc.) informe o caminho que tem a menor distância entre A e F.
-  - Problema: neste caso quantos caminhos vamos armazenar? Como vamos totalizar parcialmente as distâncias de cada caminho?​
-​
+- Permitem reutilização de código;
 
-### Tipo Estruturados: solução
+São ativadas por um programa principal ou outros subprogramas, causando um desvio.
 
-- Para a solução destes exemplos é necessário o uso de **estruturas de dados**.​
-- As estruturas de dados ampliam o conceito de variáveis, pois permitem armazenar diversas informações a partir da definição de uma única variável.​
-- Existem diversos **tipos de estruturas de dados**, tais como, vetores, matrizes, listas, filas, pilhas, árvores, arquivos, entre outras.​
+<img width="~794" height="472" alt="image" src="https://github.com/user-attachments/assets/54257f38-525d-4e38-8e67-42c5af52ecb0" />
 
-### Tipo Estruturados Unidimensionais (Vetores)
+### Tipo de Subprogramas em Java
 
-- Os **Tipos Estruturados Unidimensionais** permitem armazenar diversos dados de um mesmo tipo (homogêneos) em uma única variável​
-- Os **Tipos Estruturados Unidimensionais** também são conhecidos como **Vetores​**
-- Cada dado armazenado é identificada por um **índice**, que é a posição em que o mesmo se encontra dentro da estrutura​
-- O **índice** define a posição do elemento no vetor​
-- A representação mais comum para um Vetor é uma tabela indexada, conforme o exemplo a seguir:​
-![Vetor com 10 posições](imgs/vetor9.png)
-- No exemplo foi definida uma estrutura de 10 valores, ou seja, nela podem ser armazenados até 10 valores de um determinado tipo de dado​
-- OBS. No Java o índice do primeiro elemento de um vetor é zero. Vamos adotar esta prática, tendo em mente que nem todas as linguagens funcionam assim​
-- As informações em um vetor são identificadas por um índice que normalmente é dado entre colchetes **[]​**
+- Funções pré-definidas
+- Funções definidas pelo programador
 
-- Exemplos de Vetores em Computador:​
-  - Vetor de números reais (tamanho: 15)​: nesse vetor a posição \[6] armazena 8.5
-![Vetor com 15 posições de números reais](imgs/vetor15reais.png)
-  - Vetor de nomes (tamanho: 10)​: nesse vetor o elemento da posição \[2] é “Maria”
-![Vetor com 10 posições com texto](imgs/vetor10texto.png)
-  - Vetor de números inteiros (tamanho: 18)​: nesse vetor o elemento da posição \[14] é 2​
-![Vetor com 18 posições de números reais](imgs/vetor18reais.png)​
-  - Vetor de caracteres (tamanho: 12)​: nesse vetor a posição \[10] armazena ‘R’;​
-![Vetor com 12 posições de números reais](imgs/vetor12reais.png)
 
-- Sintaxe e exemplo do uso de Tipos Estruturados Unidimensionais (**Vetores**):
+### Definição de Subrotinas
 
-- Em Java:​
-  
-```java
+Uma sub-rotina tem:
+- Tipo: define o tipo da informação que terá o resultado da sub-rotina (saída)
+- Nome: define o nome da sub-rotina (identificador)
+- Parâmetros: definem os dados que serão trocados entre a sub-rotina e a rotina que a ativou
 
-    int vetorInteiro[] = new int[10];     // Declaração  
-    vetorInteiro[0] = 11;                 // atribuir o valor 11 ao primeiro elemento do vetor
-    vetorInteiro[9] = 22;                 // atribuir o valor 22 ao último elemento do vetor
-    int varInteiro9 = vetorInteiro[9];    // atribuir o último elemento do vetor para uma variável
-    int varInteiro0 = vetorInteiro[0];    // atribuir o primeiro elemento do vetor para uma variável
+### O que são parâmetros
 
-```
+Em uma linguagem de programação os parâmetros são denominados de:
+- Formais (Declaração)
+- Atuais (Ativação)
 
-- Em Java:​
+- **PARÂMETROS FORMAIS:** devem ter a definição do tipo antes do nome da variável.
+- **PARÂMETROS ATUAIS:** não devem ter a definição do tipo antes do nome da variável.
+- **TRANSFERÊNCIA DE PARÂMETROS**
+    - Número de Parâmetros Formais = Número de Parâmetros Atuais.
+    - O Argumento Formal e seu correspondente Argumento Atual devem ser do mesmo tipo.
 
-  ```java
+### PASSAGEM DE PARÂMETRO POR VALOR:
+Na passagem de parâmetro por valor, o parâmetro formal recebe o conteúdo do parâmetro atual.
+Exemplo:
+int troca (int a, int b)
 
-    int valores[] = new int[15];     // Declaração
-    for (int cont=0; cont<15; cont++) {
-      valores[cont] = cont;
-    }
+### PASSAGEM DE PARÂMETRO POR REFERÊNCIA:
+Na passagem de parâmetro por referência, o parâmetro formal e o parâmetro atual tem o mesmo endereço de memória.
+Ao alterar a variável relacionada ao parâmetro formal, a variável do parâmetro atual também é alterada
+Não podem ser utilizadas expressões como parâmetros atuais na ativação (chamada) da sub-rotina.
 
-  ```
+### Funções definidas pelo programador:
+O programador pode definir e implementar suas próprias funções
+As funções podem retornar um resultado, devendo, portanto, ter um tipo. Funções sem retorno devem ser definidas como do tipo void
+As funções podem (e devem) ter PARÂMETROS que são utilizados para a entrada e saída de dados das funções
+O resultado de uma função deve ser retornado a partir da cláusula return
 
-### Tipo Estruturados Unidimensionais (Vetores): denominação
+Sintaxe (definição):
 
-- **tipo**: define os elementos que serão armazenados no vetor. Podem ser tipos simples ou classes.​
-- **tamanho**: define o número de elementos do vetor.​
-- **índice**: define a posição do elemento no vetor. Pode ser definido através de valores constantes, variáveis ou expressões. ​
+tipo identificador ([tipo parâmetros]);
+{
+	[declarações]
+	< Bloco >
+	return <expressão>;
+}
 
-### Tipo Estruturados Unidimensionais (Vetores): N-Dimensões
+As funções podem ser ativadas em atribuições, condições ou em parâmetros de outras funções
 
-- Existem tipos estruturados n-dimensionais. Por exemplo, os **tipos estruturados bidimensionais** permitem organizar elementos em **linhas** e **colunas**
-- Os tipos estruturados bidimensionais são comumente chamados de **Matrizes**
-![Matriz com 5 linhas e 10 colunas](imgs/matriz5x10.png)
+A chamada de uma função deve seguir a sintaxe de ativação
+
+Sintaxe (ativação):
+
+variavel = função (parâmetros);
+ou
+System.out.printl (“formato” + função (parâmetros));
+ou
+if (função (parâmetros))
+
 
 ----------
 

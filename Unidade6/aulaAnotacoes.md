@@ -1,10 +1,3 @@
-# Algumas anotações das aulas
-
-E daí, querem ficar "famosos" e "ricos" ... então tentem resolver este desafio ...
-  [P versus NP](https://pt.wikipedia.org/wiki/P_versus_NP "P versus NP")  
-
-## Introdução à Programação - Unidade 6
-
 ## Aula
 
 Métodos -> Paradigma .. Orientação a Objeto (OO)  
