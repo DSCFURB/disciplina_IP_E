@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni2Exe04"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 08:49:16 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTE7IjA4OjQ2OjM2ICI7MjM1Mg=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTE7IjA4OjQ5OjE2ICI7MTsyNDYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, media" type="Real" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <assign variable="media" expression="(A*3.5+B*7.5)/11"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

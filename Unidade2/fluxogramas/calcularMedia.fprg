@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="calcularMedia"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 08:18:32 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTE7IjA3OjQwOjI3ICI7MjM0NQ=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTE7IjA4OjE4OjMyICI7MjsyNDU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3, soma, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <input variable="nota3"/>
+            <assign variable="soma" expression="nota1+nota2-nota3"/>
+            <assign variable="media" expression="soma / 3"/>
+            <output expression="media" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

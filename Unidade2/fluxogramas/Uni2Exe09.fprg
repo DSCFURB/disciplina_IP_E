@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni2Exe09"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-11 09:31:48 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTE7IjA5OjAyOjIyICI7MjM0MA=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTE7IjA5OjMxOjQ4ICI7MjsyNDU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dolares, cotacao, reais" type="Real" array="False" size=""/>
+            <input variable="dolares"/>
+            <input variable="cotacao"/>
+            <assign variable="reais" expression="dolares * cotacao"/>
+            <output expression="reais" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
