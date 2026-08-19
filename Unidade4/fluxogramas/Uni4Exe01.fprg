@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni4Exe01"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-18 09:18:00 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTg7IjA5OjA2OjIxICI7MjM1MA=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMTg7IjA5OjE4OjAwICI7MTsyNDU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="horasTrabalhadas, valorHora, horaExtra, salario" type="Real" array="False" size=""/>
+            <input variable="horasTrabalhadas"/>
+            <input variable="valorHora"/>
+            <assign variable="horaExtra" expression="0"/>
+            <if expression="horasTrabalhadas &gt; 160">
+                <then>
+                    <assign variable="horaExtra" expression="horasTrabalhadas - 160"/>
+                </then>
+                <else/>
+            </if>
+            <assign variable="salario" expression="(horasTrabalhadas - horaExtra) * valorHora + horaExtra * valorHora * 1.5"/>
+            <output expression="salario" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
