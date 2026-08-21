@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni4Exe03"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-20 07:53:23 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMjA7IjA3OjQwOjQ3ICI7MjM0Nw=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMjA7IjA3OjUzOjIzICI7MTsyNDUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B" type="Integer" array="False" size=""/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <if expression="A &gt; B">
+                <then>
+                    <output expression="&quot;maior = &quot; + A" newline="True"/>
+                </then>
+                <else>
+                    <if expression="B &gt; A">
+                        <then>
+                            <output expression="&quot;maior = &quot; + B" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;s&#227;o iguais&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

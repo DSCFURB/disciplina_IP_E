@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni4Exe02"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-20 07:37:00 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMjA7IjA3OjMxOjE2ICI7MjM0Mw=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMjA7IjA3OjM3OjAwICI7MTsyNDUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor" type="Integer" array="False" size=""/>
+            <input variable="valor"/>
+            <if expression="valor %&#13;&#10; 2 = 0">
+                <then>
+                    <output expression="&quot;par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#237;mpar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
