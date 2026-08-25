@@ -106,7 +106,7 @@ Dados dois valores inteiros, escreva um algoritmo que informe se eles são múlt
 
 | Exemplos de entrada | Exemplos de saída |
 | -------- | -------- |
-| 6  3 | Os valores são múltiplos. |
+| 3  6 | Os valores são múltiplos. |
 | 9  4 | Os valores não são múltiplos. |
 
 ----------
