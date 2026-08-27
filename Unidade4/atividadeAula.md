@@ -306,7 +306,7 @@ Um aluno está em dúvida sobre o título que vai receber após concluir seu cur
 | Exemplos de entrada | Exemplos de saída |
 | -------- | -------- |
 | 1 | Bacharel em Ciência da Computação |
-| 2 | Licenciado em Computação |
+| 2 | Bacharel em Ciência de Dados |
 | 3 | Bacharel em  Sistemas de Informação |
 
 ----------
