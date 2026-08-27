@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni4Exe12"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-27 07:28:28 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMjc7IjA3OjEzOjAwICI7MjM0Mw=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDgtMjc7IjA3OjI4OjI4ICI7MTsyNDY3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lado1, lado2, lado3" type="Integer" array="False" size=""/>
+            <input variable="lado1"/>
+            <input variable="lado2"/>
+            <input variable="lado3"/>
+            <if expression="(lado1+lado2&gt;lado3) and (lado1+lado3&gt;lado2) and (lado2+lado3&gt;lado1)">
+                <then>
+                    <if expression="(lado1 = lado2) and (lado1 = lado3)">
+                        <then>
+                            <output expression="&quot;equil&#225;tero&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(lado1 = lado2) or (lado1 = lado3) or (lado2 = lado3)">
+                                <then>
+                                    <output expression="&quot;is&#243;sceles&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;escaleno&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;N&#227;o &#233; um tri&#226;ngulo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
