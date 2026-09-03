@@ -164,7 +164,7 @@ Escreva um algoritmo que obtém do usuário 3 valores inteiros representando as 
 | 1  4  7 | TRUCO |
 | 2  3  11 | SEIS |
 | 1  2  3 | NOVE |
-| 11  12  13 | - |
+| 11  12  13 |   |
 
 ----------
 
