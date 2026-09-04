@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni4Exe27"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-03 10:05:14 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMDM7IjA4OjMxOjUyICI7MjM0Ng=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMDM7IjEwOjA1OjE0ICI7MjsyNDQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <input variable="horaInicio"/>
+            <input variable="minutoInicio"/>
+            <input variable="horaFim"/>
+            <input variable="minutoFim"/>
+            <assign variable="minutoTotalInicio" expression="horaInicio * 60 + minutoInicio"/>
+            <assign variable="minutoTotalFim" expression="horaFim * 60 + minutoFim"/>
+            <if expression="minutosInicio &gt;= 0 &amp;&amp; minutosInicio &lt;= 59 &amp;&amp;&#13;&#10;            minutosFim &gt;= 0 &amp;&amp; minutosFim &lt;= 59 &amp;&amp;&#13;&#10;            horaInicio &gt;= 0 &amp;&amp; horaInicio &lt;= 23 &amp;&amp;&#13;&#10;            horaFim &gt;= 0 &amp;&amp; horaFim &lt;= 23 &amp;&amp;&#13;&#10;            minutosTotalFim &gt; minutosTotalInicio">
+                <then>
+                    <assign variable="tempoMinutos" expression="minutotalFim - minutosTotalInicio"/>
+                    <if expression="tempoMinutos &lt;= 89">
+                        <then>
+                            <assign variable="aCobrar" expression="5.00"/>
+                        </then>
+                        <else>
+                            <if expression="tempoMinutos &gt;= 90 AND tempoMinutos &lt;= 149">
+                                <then>
+                                    <assign variable="aCobrar" expression="10.00"/>
+                                </then>
+                                <else>
+                                    <if expression="tempoMinutos &gt;= 150 AND tempoMinutos &lt;= 209">
+                                        <then>
+                                            <assign variable="aCobrar" expression="17.5"/>
+                                        </then>
+                                        <else>
+                                            <if expression="tempoMinutos &gt;= 210 AND tempoMinutos &lt;= 269">
+                                                <then>
+                                                    <assign variable="aCobrar" expression="25.00"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="aCobrar" expression="25.00 + ((minutosTotais / 60) - 4) * 10.00"/>
+                                                    <if expression="minutoTotais % 60 &gt;= 30">
+                                                        <then>
+                                                            <assign variable="aCobrar" expression="aCobrar + 10.00"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Dados incorretos&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni4Exe13"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-03 08:31:50 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMDM7IjA3OjEwOjEwICI7MjMzNg=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMDM7IjA4OjMxOjUwICI7MTsyNDUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="carta1, carta2, carta3, qtd" type="Integer" array="False" size=""/>
+            <input variable="carta1"/>
+            <input variable="carta2"/>
+            <input variable="carta3"/>
+            <assign variable="qtd" expression="0"/>
+            <if expression="carta1 = 1 OR carta1 = 2 OR carta1 = 3">
+                <then>
+                    <assign variable="qtd" expression="qtd + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="carta2 = 1 OR carta2 = 2 OR carta2 = 3">
+                <then>
+                    <assign variable="qtd" expression="qtd + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="carta1 = 1 OR carta2 = 1 OR carta3 = 3">
+                <then>
+                    <assign variable="qtd" expression="qtd + 1"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="qtd = 1">
+                <then>
+                    <output expression="&quot;truco&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="qtd = 2">
+                        <then>
+                            <output expression="&quot;SEIS&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="qtd = 3">
+                                <then>
+                                    <output expression="&quot;NOVEEEEE&quot;" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
