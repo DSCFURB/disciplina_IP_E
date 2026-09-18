@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni5Exe07"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-17 09:55:50 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMTc7IjA5OjUwOjEzICI7MjM1MA=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMTc7IjA5OjU1OjUwICI7MTsyNDY0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="maior, menor, numero" type="Real" array="False" size=""/>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <assign variable="maior" expression="-999999"/>
+            <assign variable="menor" expression="999999"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <input variable="numero"/>
+                <if expression="numero &gt; maior">
+                    <then>
+                        <assign variable="maior" expression="numero"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="numero &lt; menor">
+                    <then>
+                        <assign variable="menor" expression="numero"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Maior&quot;" newline="True"/>
+            <output expression="maior" newline="True"/>
+            <output expression="&quot;Menor&quot;" newline="True"/>
+            <output expression="menor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
