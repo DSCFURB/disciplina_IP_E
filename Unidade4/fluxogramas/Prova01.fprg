@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Prova01"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-29 07:30:35 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMjk7IjA2OjU0OjU4ICI7MjM2Mw=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMjk7IjA3OjMwOjM1ICI7MTsyNDYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade, anos, meses, experiencia" type="Integer" array="False" size=""/>
+            <declare name="forma&#231;&#227;o" type="String" array="False" size=""/>
+            <input variable="idade"/>
+            <input variable="anos"/>
+            <input variable="meses"/>
+            <input variable="forma&#231;&#227;o"/>
+            <if expression="idade &gt;= 16 &amp;&amp; idade &lt;= 60 &amp;&amp; anos &gt;= 0 &amp;&amp; meses &gt;= 0 &amp;&amp; meses &lt;= 11 &amp;&amp; (forma&#231;&#227;o == &quot;S&quot; || forma&#231;&#227;o == &quot;N&quot;)">
+                <then>
+                    <assign variable="experiencia" expression="anos * 12 + meses"/>
+                    <if expression="idade &gt;= 21 &amp;&amp; idade &lt;= 30 &amp;&amp; experiencia &gt;= 18 &amp;&amp; forma&#231;&#227;o = &quot;S&quot;">
+                        <then>
+                            <output expression="&quot;APROVADO PARA ENTREVISTA&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="idade &gt;= 31 &amp;&amp; idade &lt;= 40 &amp;&amp; experiencia &gt;= 60 &amp;&amp; forma&#231;&#227;o = &quot;S&quot;">
+                                <then>
+                                    <output expression="&quot;APROVADO PARA ENTREVISTA&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="idade &gt;= 40 &amp;&amp; experiencia &gt;= 120">
+                                        <then>
+                                            <output expression="&quot;LISTA DE ESPERA&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="idade &lt; 21 &amp;&amp; experiencia &gt;= 1 &amp;&amp; forma&#231;&#227;o = &quot;S&quot;">
+                                                <then>
+                                                    <output expression="&quot;LISTA DE ESPERA&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;N&#194;O APROVADO PARA ENTREVISTA&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;DADOS de ENTRADA INV&#193;LIDOS&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
