@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni5Exe19"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-29 09:59:53 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMjk7IjA5OjQ2OjQ3ICI7MjM2NQ=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMDktMjk7IjA5OjU5OjUzICI7MTsyNDc0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorCompra, somaCompras, valorAPagar" type="Real" array="False" size=""/>
+            <assign variable="somaCompras" expression="0"/>
+            <input variable="valorCompra"/>
+            <while expression="ValorCompra &lt;&gt; 0">
+                <if expression="valorCompra &gt;= 500">
+                    <then>
+                        <assign variable="valorAPagar" expression="valorCompra * 0.8"/>
+                    </then>
+                    <else>
+                        <assign variable="valorAPagar" expression="valorCompra * 0.85"/>
+                    </else>
+                </if>
+                <output expression="&quot;Valor A Pagar&quot;" newline="True"/>
+                <output expression="valorAPagar" newline="True"/>
+                <assign variable="somaCompras" expression="somaCompras + valorAPagar"/>
+                <input variable="valorCompra"/>
+            </while>
+            <output expression="&quot;Valor total&quot;" newline="True"/>
+            <output expression="somaCompras" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
