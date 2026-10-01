@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni5Exe17"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 07:20:15 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMTAtMDE7IjA2OjQ3OjE2ICI7MjM0MQ=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMTAtMDE7IjA3OjIwOjE1ICI7MjsyNDQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="inscricao, inscricaoMaisAlto, inscricaoMaisBaixo, contaAtletas" type="Integer" array="False" size=""/>
+            <declare name="altura, maisBaixo, maisAlto, somaAlturas" type="Real" array="False" size=""/>
+            <assign variable="maisBaixo" expression="9999"/>
+            <assign variable="maisAlto" expression="0"/>
+            <assign variable="contaAtletas" expression="0"/>
+            <assign variable="somaAlturas" expression="0"/>
+            <input variable="inscricao"/>
+            <while expression="inscricao &lt;&gt; 0">
+                <input variable="altura"/>
+                <assign variable="contaAtletas" expression="contaAtletas + 1"/>
+                <assign variable="somaAlturas" expression="somaAlturas + altura"/>
+                <if expression="altura &lt; maisBaixo">
+                    <then>
+                        <assign variable="inscricaoMaisBaixo" expression="inscricao"/>
+                        <assign variable="maisBaixo" expression="altura"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="altura &gt; maisAlto">
+                    <then>
+                        <assign variable="inscricaoMaisAlto" expression="inscricao"/>
+                        <assign variable="maisAlto" expression="altura"/>
+                    </then>
+                    <else/>
+                </if>
+                <input variable="inscricao"/>
+            </while>
+            <output expression="&quot;Mais baixo&quot;" newline="True"/>
+            <output expression="inscricaoMaisBaixo" newline="True"/>
+            <output expression="maisBaixo" newline="True"/>
+            <output expression="&quot;Mais alto&quot;" newline="True"/>
+            <output expression="inscricaoMaisAlto" newline="True"/>
+            <output expression="maisAlto" newline="True"/>
+            <output expression="&quot;Media das alturas&quot;" newline="True"/>
+            <output expression="somaAlturas/contaAtletas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
