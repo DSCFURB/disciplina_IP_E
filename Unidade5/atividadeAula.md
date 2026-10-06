@@ -407,7 +407,7 @@ Exemplo de entrada / saída:
 | 1      | BTS               |  
 | 2      | ColdPlay          |  
 | 3      | Linkin Park       |  
-| 4      | Rewnty One Pilots |  
+| 4      | Twenty One Pilots |  
 
 Descreva um algoritmo que:  
 
