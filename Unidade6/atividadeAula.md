@@ -104,7 +104,7 @@ e) informar se o CPF é válido segundo o algoritmo de verificação.
 
 Para calcular cada dígito, multiplique os algarismos anteriores pelos pesos correspondentes, some os produtos e calcule o resto da divisão por 11. Se o resto for menor que 2, o dígito será 0; caso contrário, será igual a \(11 - \text{resto}\). No cálculo do segundo dígito, inclua também o primeiro dígito verificador.
 
-**Uni6Exe32.java** Faça um programa que apresente repetidamente um menu com as seguintes opções:
+**Uni6Exe13.java** Faça um programa que apresente repetidamente um menu com as seguintes opções:
 MENU DE CONVERSÕES
 
 1 — Converter Celsius para Fahrenheit
