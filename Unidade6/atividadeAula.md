@@ -62,17 +62,97 @@ b)	para cada expressão aritmética informe o número de divisões e multiplica�
 
 c)	informe a posição do primeiro operador aritmético de cada expressão.
 
-**Uni6Exe08.java** Faça um programa para calcular a combinação de n elementos tomados p a p. A combinação e o fatorial devem ser calculados em subprogramas.
+**Uni6Exe08.java** Uma técnica simples de compressão consiste em substituir sequências de caracteres iguais e consecutivos pelo caractere seguido da quantidade de repetições. Por exemplo, a sequência AAAABCCCCC pode ser representada como A4B1C5.
+
+Faça um programa que leia um texto e utilize subprogramas para:
+
+a) comprimir o texto, substituindo sequências de caracteres repetidos por suas representações compactadas;
+
+b) descomprimir o resultado, reconstruindo o texto original;
+
+c) informar a quantidade de caracteres do texto original e do texto comprimido e calcular a redução percentual obtida.
+
+Considere, para este exercício, que o texto de entrada contém apenas letras maiúsculas e que a representação comprimida utiliza um número após cada caractere, inclusive quando ele aparece uma única vez.
+
+O programa deverá demonstrar que a descompressão recupera exatamente o texto original.
+
+**Uni6Exe09.java** Faça um programa para calcular a combinação de n elementos tomados p a p. A combinação e o fatorial devem ser calculados em subprogramas.
 Combinação = n! / ( p! * (n-p)!) ).
 
-**Uni6Exe09.java** Faça um programa que, com base em subprogramas, transforme:
+**Uni6Exe10.java** Faça um programa que, com base em subprogramas, transforme:
 a)	um valor hexadecimal em decimal e vice-versa;
 b)	um valor hexadecimal em binário e vice-versa;
 c)	um valor binário em decimal e vice-versa.
 
-**Uni6Exe10.java** Faça um programa que, com base em subprogramas, calcule e informe:
+**Uni6Exe11.java** Faça um programa que, com base em subprogramas, calcule e informe:
 a)	o Máximo Divisor Comum entre dois números;
 b)	o Mínimo Múltiplo Comum entre dois números.
 
+**Uni6Exe12.java** O Cadastro de Pessoas Físicas (CPF) possui 11 algarismos, sendo os dois últimos dígitos verificadores calculados a partir dos nove primeiros e dos dez primeiros algarismos, respectivamente.
+
+Faça um programa que leia uma sequência de 11 algarismos e utilize subprogramas para:
+
+a) verificar se a entrada possui exatamente 11 algarismos;
+
+b) calcular o primeiro dígito verificador;
+
+c) calcular o segundo dígito verificador;
+
+d) verificar se os dígitos calculados correspondem aos informados;
+
+e) informar se o CPF é válido segundo o algoritmo de verificação.
+
+Para calcular cada dígito, multiplique os algarismos anteriores pelos pesos correspondentes, some os produtos e calcule o resto da divisão por 11. Se o resto for menor que 2, o dígito será 0; caso contrário, será igual a \(11 - \text{resto}\). No cálculo do segundo dígito, inclua também o primeiro dígito verificador.
+
+**Uni6Exe32.java** Faça um programa que apresente repetidamente um menu com as seguintes opções:
+MENU DE CONVERSÕES
+
+1 — Converter Celsius para Fahrenheit
+
+2 — Converter Fahrenheit para Celsius
+
+0 — Encerrar o programa
+
+O programa deverá solicitar a opção desejada e chamar um método específico para executar a operação selecionada.
+
+As operações deverão ser implementadas conforme as seguintes especificações:
+
+a) A conversão de Celsius para Fahrenheit deverá utilizar a fórmula \(F = \frac{9}{5}C + 32\).
+
+b) A conversão de Fahrenheit para Celsius deverá utilizar a fórmula \(C = \frac{5}{9}(F - 32)\).
+
+O menu deverá permanecer em execução até que o usuário escolha a opção zero. Para opções inválidas, o programa deverá exibir uma mensagem e solicitar uma nova escolha.
+
+**Uni6Exe14.java** Faça um programa que apresente repetidamente um menu para simular operações financeiras:
+SIMULADOR FINANCEIRO
+
+1 — Calcular juros simples
+
+2 — Calcular montante com juros compostos
+
+3 — Calcular o valor final de uma compra com desconto
+
+4 — Calcular a variação percentual entre dois valores
+
+0 — Encerrar o programa
+
+O programa deverá solicitar a opção escolhida, ler os dados necessários e chamar o subprograma correspondente. Cada operação deverá ser implementada em um método próprio, que receberá os parâmetros necessários e retornará o resultado.
+
+Utilize as seguintes especificações:
+
+a) Juros simples: receber o capital inicial \(C\), a taxa de juros \(i\) por período e o número de períodos \(t\), calculando o montante pela fórmula \(M=C(1+it)\).
+
+b) Juros compostos: receber o capital inicial, a taxa por período e o número de períodos, calculando o montante pela fórmula \(M=C(1+i)^t\).
+
+c) Compra com desconto: receber o preço original e a porcentagem de desconto, retornando o preço final.
+
+d) Variação percentual: receber o valor inicial e o valor final e calcular a variação percentual pela fórmula:
+\[
+Variação = \frac{valor\ final-valor\ inicial}{valor\ inicial}\times100
+\]
+
+O programa deverá apresentar os resultados com duas casas decimais, validar os dados necessários para cada operação e retornar ao menu após cada cálculo. A opção zero deverá encerrar o programa.
+
+Para os cálculos de juros, considere a taxa expressa em formato decimal: por exemplo, 5% corresponde a \(0{,}05\). Na variação percentual, o valor inicial deverá ser diferente de zero.
 
 
