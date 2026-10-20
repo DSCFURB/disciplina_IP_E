@@ -130,10 +130,6 @@ SIMULADOR FINANCEIRO
 
 2 — Calcular montante com juros compostos
 
-3 — Calcular o valor final de uma compra com desconto
-
-4 — Calcular a variação percentual entre dois valores
-
 0 — Encerrar o programa
 
 O programa deverá solicitar a opção escolhida, ler os dados necessários e chamar o subprograma correspondente. Cada operação deverá ser implementada em um método próprio, que receberá os parâmetros necessários e retornará o resultado.
@@ -144,15 +140,75 @@ a) Juros simples: receber o capital inicial \(C\), a taxa de juros \(i\) por per
 
 b) Juros compostos: receber o capital inicial, a taxa por período e o número de períodos, calculando o montante pela fórmula \(M=C(1+i)^t\).
 
-c) Compra com desconto: receber o preço original e a porcentagem de desconto, retornando o preço final.
-
-d) Variação percentual: receber o valor inicial e o valor final e calcular a variação percentual pela fórmula:
-\[
-Variação = \frac{valor\ final-valor\ inicial}{valor\ inicial}\times100
-\]
-
 O programa deverá apresentar os resultados com duas casas decimais, validar os dados necessários para cada operação e retornar ao menu após cada cálculo. A opção zero deverá encerrar o programa.
 
 Para os cálculos de juros, considere a taxa expressa em formato decimal: por exemplo, 5% corresponde a \(0{,}05\). Na variação percentual, o valor inicial deverá ser diferente de zero.
 
+**Uni6Exe15.java** Faça um programa que apresente repetidamente o seguinte menu:
+SIMULADOR DE FINANCIAMENTO
 
+1 — Calcular o valor da prestação mensal
+
+2 — Calcular o custo total do financiamento
+
+3 — Simular a amortização de uma dívida
+
+4 — Comparar dois financiamentos
+
+0 — Encerrar o programa
+
+O programa deverá solicitar a opção desejada e chamar o método correspondente. Cada operação deverá ser implementada em um subprograma específico, com parâmetros e valores de retorno adequados.
+
+Considere as seguintes especificações:
+
+a) Valor da prestação mensal: receber o valor financiado, a taxa de juros mensal e a quantidade de prestações, calculando o valor da prestação fixa pela fórmula:
+\[
+P = \frac{C \cdot i(1+i)^n}{(1+i)^n-1}
+\]
+
+Em que \(C\) representa o capital financiado, \(i\) a taxa de juros mensal em formato decimal e \(n\) a quantidade de prestações. Se a taxa for zero, a prestação será \(C/n\).
+
+b) Custo total do financiamento: receber o valor da prestação e a quantidade de prestações, retornando o valor total pago e permitindo calcular a diferença entre esse total e o capital originalmente financiado.
+
+c) Simulação da amortização: receber o valor financiado, a taxa de juros mensal, a quantidade de prestações e o valor da prestação. Utilizando uma estrutura de repetição, apresentar para cada mês:
+- número da prestação;
+- saldo devedor no início do mês;
+- juros calculados sobre o saldo devedor;
+- valor amortizado;
+- saldo devedor após o pagamento.
+A amortização mensal será calculada pela diferença entre a prestação e os juros do período. O saldo devedor será reduzido pelo valor amortizado.
+
+d) Comparação de financiamentos: receber os dados de dois financiamentos e calcular o valor das prestações e o custo total de cada um. Ao final, informar qual alternativa apresenta o menor custo total e qual a diferença entre os custos.
+
+O menu deverá permanecer em execução até que o usuário escolha a opção zero. O programa deverá validar os dados de entrada e tratar situações como valores não positivos para o capital ou para a quantidade de prestações.
+
+**Uni6Exe16.java** Faça um programa que apresente repetidamente o seguinte menu:
+PLANEJAMENTO DE VIAGENS
+
+1 — Calcular o custo de combustível de um percurso
+
+2 — Calcular o custo de hospedagem
+
+3 — Calcular o custo total de uma viagem
+
+4 — Comparar duas opções de viagem
+
+0 — Encerrar o programa
+
+O programa deverá solicitar a opção desejada e chamar o método correspondente. O menu deverá ser apresentado novamente após cada operação, até que o usuário escolha a opção zero.
+
+Implemente os métodos conforme as especificações:
+
+a) Custo de combustível: receber a distância do percurso, o consumo médio do veículo em quilômetros por litro e o preço do litro de combustível. Retornar o custo estimado de combustível para percorrer a distância informada.
+
+b) Custo de hospedagem: receber o preço da diária e a quantidade de noites. Retornar o custo total da hospedagem.
+
+c) Custo total da viagem: receber os dados relativos ao transporte e à hospedagem, chamar os métodos desenvolvidos nos itens anteriores e retornar o custo total da viagem, incluindo combustível e hospedagem.
+
+d) Comparação de viagens: receber os dados de duas opções de viagem e chamar o método de cálculo do custo total para cada uma delas. Apresentar os custos calculados, informar qual opção é mais econômica e indicar a diferença entre os valores.
+
+O programa deverá validar os dados informados, evitando valores negativos ou inválidos para distância, consumo, preço do combustível, diária e quantidade de noites.
+Requisito de implementação
+O método do item c deverá chamar os métodos dos itens a e b. Da mesma forma, o método do item d deverá chamar o método do item c para calcular os custos das duas alternativas.
+
+Não duplique os cálculos já implementados nos outros métodos. Cada método deverá ter uma responsabilidade específica, e o programa principal deverá controlar o menu e apresentar os resultados.
