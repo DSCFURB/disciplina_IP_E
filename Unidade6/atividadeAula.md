@@ -88,21 +88,33 @@ c)	um valor binário em decimal e vice-versa.
 a)	o Máximo Divisor Comum entre dois números;
 b)	o Mínimo Múltiplo Comum entre dois números.
 
-**Uni6Exe12.java** O Cadastro de Pessoas Físicas (CPF) possui 11 algarismos, sendo os dois últimos dígitos verificadores calculados a partir dos nove primeiros e dos dez primeiros algarismos, respectivamente.
+**Uni6Exe12.java** O Cadastro de Pessoas Físicas (CPF) é composto por 11 algarismos. Os dois últimos são chamados de dígitos verificadores, pois são calculados a partir dos nove primeiros algarismos e utilizados para verificar se o número informado atende às regras de validação do CPF.
 
-Faça um programa que leia uma sequência de 11 algarismos e utilize subprogramas para:
+Faça um programa em Java que leia um CPF, informado como uma sequência de 11 algarismos, e utilize subprogramas para realizar as seguintes operações:
 
-a) verificar se a entrada possui exatamente 11 algarismos;
+a) Verificar se a entrada contém exatamente 11 algarismos.
 
-b) calcular o primeiro dígito verificador;
+b) Calcular o primeiro dígito verificador, utilizando os nove primeiros algarismos do CPF, conforme o procedimento descrito a seguir:
 
-c) calcular o segundo dígito verificador;
+Multiplique o primeiro algarismo por 10, o segundo por 9, o terceiro por 8 e assim sucessivamente, até multiplicar o nono algarismo por 2.
 
-d) verificar se os dígitos calculados correspondem aos informados;
+Some os resultados das nove multiplicações e calcule o resto da divisão dessa soma por 11.
 
-e) informar se o CPF é válido segundo o algoritmo de verificação.
+Se o resto for menor que 2, o primeiro dígito verificador será 0. Caso contrário, será igual a 11 menos o resto.
 
-Para calcular cada dígito, multiplique os algarismos anteriores pelos pesos correspondentes, some os produtos e calcule o resto da divisão por 11. Se o resto for menor que 2, o dígito será 0; caso contrário, será igual a \(11 - \text{resto}\). No cálculo do segundo dígito, inclua também o primeiro dígito verificador.
+c) Calcular o segundo dígito verificador, utilizando os nove primeiros algarismos e o primeiro dígito verificador calculado anteriormente:
+
+Multiplique o primeiro algarismo por 11, o segundo por 10, o terceiro por 9 e assim sucessivamente, até multiplicar o décimo algarismo por 2.
+
+Some os resultados das dez multiplicações e calcule o resto da divisão dessa soma por 11.
+
+Se o resto for menor que 2, o segundo dígito verificador será 0. Caso contrário, será igual a 11 menos o resto.
+
+d) Comparar os dois dígitos verificadores calculados com os dois últimos algarismos do CPF informado.
+
+e) Informar se o CPF é válido segundo o algoritmo de verificação. Para isso, os dois dígitos calculados devem ser iguais aos dois últimos algarismos informados. Considere também inválidas as entradas que contenham caracteres diferentes de algarismos ou cujos 11 algarismos sejam todos iguais.
+
+O programa deverá ser organizado em subprogramas, de modo que o método responsável pela validação do CPF utilize os métodos desenvolvidos para calcular os dois dígitos verificadores.
 
 **Uni6Exe13.java** Faça um programa que apresente repetidamente um menu com as seguintes opções:
 MENU DE CONVERSÕES
