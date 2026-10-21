@@ -178,8 +178,8 @@ Um motorista acaba de voltar de um feriado prolongado. Antes de sair de viagem e
 | -------- | -------- |
 | Número total de reabastecimentos: 3 | - |
 | Parada 1: Quilometragem: 120 km Combustível: 10 litros | Parada 1: 12.0 km por litro |
-| Parada 2: Quilometragem: 150 km Combustível: 15 litros | Parada 1: 10.0 km por litro |
-| Parada 3: Quilometragem: 200 km Combustível: 20 litros | Parada 1: 10.0 km por litro |
+| Parada 2: Quilometragem: 150 km Combustível: 15 litros | Parada 2: 10.0 km por litro |
+| Parada 3: Quilometragem: 200 km Combustível: 20 litros | Parada 3: 10.0 km por litro |
 | - | Quilometragem média obtida por litro: 10.44 |
 
 ----------
@@ -400,20 +400,20 @@ Exemplo de entrada / saída:
 
 ### Uni5Exe28.java
 
- Uma emissora de rádio decidiu promover uma eleição para determinar o melhor conjunto do ano segundo a opinião dos ouvintes. Entraram na disputa apenas os quatro conjuntos mais solicitados durante o ano. Os votos são informados através de códigos:  
+ Uma emissora de rádio decidiu promover uma eleição para determinar a melhor banda do ano segundo a opinião dos ouvintes. Entraram na disputa apenas as quatro bandas mais solicitadas durante o ano. Os votos são informados através de códigos:  
 
-| código | conjunto      |  
-|--------|---------------|  
-| 1      | Nenhum de Nós |  
-| 2      | CPM22         |  
-| 3      | Skank         |  
-| 4      | Jota Quest    |  
+| código | conjunto          |  
+|--------|-------------------|  
+| 1      | BTS               |  
+| 2      | ColdPlay          |  
+| 3      | Linkin Park       |  
+| 4      | Twenty One Pilots |  
 
 Descreva um algoritmo que:  
 
-- informe o total de votos para cada grupo;  
-- informe o percentual dos votos para cada grupo;  
-- informe o grupo vencedor.  
+- informe o total de votos para cada banda;  
+- informe o percentual dos votos para cada banda;  
+- informe a banda vencedora.  
 
 O algoritmo deve apresentar ao usuário a seguinte mensagem: mais um voto: s (SIM) / n (NÃO)? antes de prosseguir com a entrada de dados.  
 

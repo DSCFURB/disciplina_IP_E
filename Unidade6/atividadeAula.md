@@ -41,8 +41,20 @@ b)	informe o valor numérico que aparece no início do texto. Informe 0 (zero) s
 
 c)	forneça a posição de início de uma palavra dentro do texto. 
 
+**Uni6Exe05.java** Um palíndromo é uma sequencia de caracteres que tem o mesmo signiﬁcado quando lida da esquerda para a direita ou da direita para a esquerda, isto é, de trás para frente. Exemplos de palíndromos são: radar, reviver e arara. Escreva um programa que solicite ao usuário diversas sequencias de caracteres. Para cada sequência de caracteres fornecida, o programa deverá informar se tal sequência é ou não um palíndromo. O programa deve permanecer solicitando sequencias de caracteres enquanto a sequencia contiver caracteres, isto é, a partir do momento que o usuário informar uma string vazia, o programa deverá interromper este procedimento e exibir a quantidade de palavras informadas que eram palíndromos. A verificação se a palavra é ou não um palíndromo deve ser feita em um subprograma.
 
-**Uni6Exe05.java** Faça um programa que leia várias expressões aritméticas e, com base em subprogramas, escreva:
+**Uni6Exe06.java** Suponha que uma pessoa que escreva uma mensagem não quer que suas mensagens sejam entendidas. Para tanto ela irá criptografar as mensagens usando a seguinte tabela de conversão:
+A	é substituído por	Z
+B	por	Y
+C	por	X
+.	.	.
+Z	por	A
+1	por	9
+.	.	.
+9	por	1
+Qualquer outro caracter continua o mesmo. Faça um programa que leia N mensagens e imprima-a juntamente com a mensagem codificada. A mensagem deve ser codificada dentro de um subprograma.
+
+**Uni6Exe07.java** Faça um programa que leia várias expressões aritméticas e, com base em subprogramas, escreva:
 
 a)	informe se cada expressão aritmética está correta sintaticamente em relação ao número de parênteses utilizados;
 
@@ -50,94 +62,165 @@ b)	para cada expressão aritmética informe o número de divisões e multiplica�
 
 c)	informe a posição do primeiro operador aritmético de cada expressão.
 
+**Uni6Exe08.java** Uma técnica simples de compressão consiste em substituir sequências de caracteres iguais e consecutivos pelo caractere seguido da quantidade de repetições. Por exemplo, a sequência AAAABCCCCC pode ser representada como A4B1C5.
 
-**Uni6Exe06.java** Uma startup precisa medir a previsibilidade e a estabilidade do seu negócio. Para isso, a empresa monitora o faturamento diário durante um período de 7 dias para descobrir a média semanal e o desvio padrão da receita. Como estagiário de Ciência de Dados, você ficou encarregado de criar duas sub-rotinas para automatizar essa análise: 
+Faça um programa que leia um texto e utilize subprogramas para:
 
-a) double calcularMedia(double[] dados): Deve calcular e retornar a média aritmética dos valores. 
+a) comprimir o texto, substituindo sequências de caracteres repetidos por suas representações compactadas;
 
-b) double calcularDesvioPadrao(double[] dados, double media): Deve calcular e retornar o desvio padrão dos dados. 
+b) descomprimir o resultado, reconstruindo o texto original;
 
-Obs.: desvio padrão é uma medida que indica o quanto os valores de um conjunto de dados se afastam da média, indicando a consistência dos resultados. Para calcular o desvio padrão siga os seguintes passos: calcule a média dos valores; realize a seguinte operação para cada valor do conjunto (n-média) ²; some os resultados obtidos na última conta; divida o resulta da soma pelo número de elementos; por último, faça a raiz quadrada do último valor. 
+c) informar a quantidade de caracteres do texto original e do texto comprimido e calcular a redução percentual obtida.
 
+Considere, para este exercício, que o texto de entrada contém apenas letras maiúsculas e que a representação comprimida utiliza um número após cada caractere, inclusive quando ele aparece uma única vez.
 
-**Uni6Exe07.java** O sensor de presença de uma loja de conveniência registrou o número de clientes a cada duas horas durante um dia inteiro. No entanto, houve uma falha no sistema e algumas leituras foram corrompidas, gerando valores negativos. Crie uma sub-rotina para realizar o tratamento desses dados corrompidos. A função deve receber o vetor original, gerar e retornar um novo vetor totalmente íntegro, ou seja, um vetor que mantenha os dados corretos e substitua todos os valores negativos por 0. 
+O programa deverá demonstrar que a descompressão recupera exatamente o texto original.
 
+**Uni6Exe09.java** Faça um programa para calcular a combinação de n elementos tomados p a p. A combinação e o fatorial devem ser calculados em subprogramas.
+Combinação = n! / ( p! * (n-p)!) ).
 
-**Uni6Exe08.java** m grupo de cinéfilos está organizando uma ação de Dia dos Namorados para avaliar a compatibilidade de casais com base nas preferências de filmes. PO programa deve receber, de forma individual, uma nota de 1 a 5 para cinco filmes. Escreva uma sub-rotina que receba o vetor de notas da pessoa A e o vetor de notas da pessoa B. A função deve calcular a diferença absoluta (sem sinal negativo) entre as notas de cada filme e gerenciar um medidor de afinidade (que começa em 0) seguindo as regras abaixo:
+**Uni6Exe10.java** Faça um programa que, com base em subprogramas, transforme:
+a)	um valor hexadecimal em decimal e vice-versa;
+b)	um valor hexadecimal em binário e vice-versa;
+c)	um valor binário em decimal e vice-versa.
 
-- Se a diferença for igual a 0 (mesma nota): Adicione 3 pontos ao medidor.
+**Uni6Exe11.java** Faça um programa que, com base em subprogramas, calcule e informe:
+a)	o Máximo Divisor Comum entre dois números;
+b)	o Mínimo Múltiplo Comum entre dois números.
 
-- Se a diferença for de 1 ou 2 (notas próximas): Adicione 1 ponto ao medidor.
+**Uni6Exe12.java** O Cadastro de Pessoas Físicas (CPF) é composto por 11 algarismos. Os dois últimos são chamados de dígitos verificadores, pois são calculados a partir dos nove primeiros algarismos e utilizados para verificar se o número informado atende às regras de validação do CPF.
 
-- Se a diferença for igual ou maior que 3 (gostos muito distantes): Subtraia 2 pontos do medidor.
+Faça um programa em Java que leia um CPF, informado como uma sequência de 11 algarismos, e utilize subprogramas para realizar as seguintes operações:
 
-Se a diferença for igual ou maior que 3 (gostos muito distantes): Subtraia 2 pontos do medidor. 
+a) Verificar se a entrada contém exatamente 11 algarismos.
 
+b) Calcular o primeiro dígito verificador, utilizando os nove primeiros algarismos do CPF, conforme o procedimento descrito a seguir:
 
-**Uni6Exe09.java** Em uma turma de Ciência de Dados, o professor solicitou que os alunos desenvolvessem um conversor decimal para binário. Em suas especificações o professor informou que: 
+Multiplique o primeiro algarismo por 10, o segundo por 9, o terceiro por 8 e assim sucessivamente, até multiplicar o nono algarismo por 2.
 
-- O usuário deve digitar um número inteiro no formato decimal que deseja transformar.
+Some os resultados das nove multiplicações e calcule o resto da divisão dessa soma por 11.
 
-- A sub-rotina valorConvertido realizará a conversão e retornará um vetor de inteiros contendo a representação do número em binário.
+Se o resto for menor que 2, o primeiro dígito verificador será 0. Caso contrário, será igual a 11 menos o resto.
 
-- O programa principal deve receber esse vetor retornado e imprimir o resultado final formatado na tela.
+c) Calcular o segundo dígito verificador, utilizando os nove primeiros algarismos e o primeiro dígito verificador calculado anteriormente:
 
-**Uni6Exe10.java** Bancos de dados e tabelas precisam permitir que novos dados entrem, sejam encontrados e também deletados quando um cliente cancela o serviço. Você deve permitir que o usuário armazene até 10 IDs (valores inteiros) em um vetor, onde o valor 0 representa uma posição vazia. Com base nisso, crie uma sub-rotina para cada uma das situações abaixo: 
+Multiplique o primeiro algarismo por 11, o segundo por 10, o terceiro por 9 e assim sucessivamente, até multiplicar o décimo algarismo por 2.
 
-- Verificar a existência de um ID.
-  
-- Remover um ID.
-  
-- Adicionar um ID, caso ainda haja espaço disponível.
+Some os resultados das dez multiplicações e calcule o resto da divisão dessa soma por 11.
 
-**Uni6Exe11.java** Em empresas de tecnologia e e-commerce, o controle de estoque é automatizado por sistemas que atualizam bases de dados em tempo real. Para facilitar a operação, os produtos são identificados diretamente por seus nomes, e o sistema deve ser capaz de localizar as quantidades em estoque correspondentes. Crie um programa que gerencie um estoque de 5 itens, armazenando o nome dos itens e a quantidade em estoque. O programa principal deverá conter um menu com as seguintes opções: 
+Se o resto for menor que 2, o segundo dígito verificador será 0. Caso contrário, será igual a 11 menos o resto.
 
-1 – Procurar item. 
+d) Comparar os dois dígitos verificadores calculados com os dois últimos algarismos do CPF informado.
 
-2 – Adicionar item. 
+e) Informar se o CPF é válido segundo o algoritmo de verificação. Para isso, os dois dígitos calculados devem ser iguais aos dois últimos algarismos informados. Considere também inválidas as entradas que contenham caracteres diferentes de algarismos ou cujos 11 algarismos sejam todos iguais.
 
-3 – Retirar item. 
+O programa deverá ser organizado em subprogramas, de modo que o método responsável pela validação do CPF utilize os métodos desenvolvidos para calcular os dois dígitos verificadores.
 
-4 – Sair.	 
+**Uni6Exe13.java** Faça um programa que apresente repetidamente um menu com as seguintes opções:
+MENU DE CONVERSÕES
 
-Para cada opção do menu, com exceção da opção 4, uma sub-rotina diferente deverá ser acionada, e o usuário deverá ser informado sobre o resultado da ação realizada. 
+1 — Converter Celsius para Fahrenheit
 
-**Uni6Exe12.java** Em segurança de dados, antes de liberar o acesso a um relatório ou banco de dados confidencial, o sistema precisa verificar se o usuário que está tentando logar possui permissão ativa na empresa. Com base nos usuários armazenados que possuem acesso autorizado ao sistema, você deverá criar a sub-rotina booleana verificarPermissao(String[] lista, String usuarioTentandoAcesso), que deve retornar:  
+2 — Converter Fahrenheit para Celsius
 
-- True, para “Acesso Autorizado”; 
+0 — Encerrar o programa
 
-- False para “Acesso Negado”.  
+O programa deverá solicitar a opção desejada e chamar um método específico para executar a operação selecionada.
 
-Após a verificação, o usuário que está tentando acessar deverá receber a seguinte mensagem: “Olá, usuário y. Seu acesso foi permitido/negado.” 
+As operações deverão ser implementadas conforme as seguintes especificações:
 
-**Uni6Exe13.java** Um laboratório de biomedicina recebe diariamente lotes de insumos refrigerados (como vacinas, amostras de sangue e reagentes) vindos de fornecedores globais. Como cada fornecedor utiliza uma unidade de medida diferente — Celsius (°C), Fahrenheit (°F) ou Kelvin (K) —, o laboratório precisa padronizar todas as temperaturas de um lote em uma única unidade escolhida pelo biomédico para conseguir gerar os relatórios de controle de qualidade. Desenvolva um programa em Java que armazene em um vetor 5 temperaturas em Celsius vindas do relatório de um fornecedor. No programa principal, o sistema deve perguntar ao usuário para qual unidade ele deseja converter o lote atual, exibindo as seguintes opções: 
+a) A conversão de Celsius para Fahrenheit deverá utilizar a fórmula \(F = \frac{9}{5}C + 32\).
 
-- Digite 1 para converter para Fahrenheit (°F) 
+b) A conversão de Fahrenheit para Celsius deverá utilizar a fórmula \(C = \frac{5}{9}(F - 32)\).
 
-- Digite 2 para converter para Kelvin (K) 
+O menu deverá permanecer em execução até que o usuário escolha a opção zero. Para opções inválidas, o programa deverá exibir uma mensagem e solicitar uma nova escolha.
 
-Com base na escolha do usuário, o programa principal deve acionar a sub-rotina correspondente, passar o vetor original como parâmetro e, por fim, imprimir o novo vetor com as temperaturas já convertidas e formatadas 
+**Uni6Exe14.java** Faça um programa que apresente repetidamente um menu para simular operações financeiras:
+SIMULADOR FINANCEIRO
 
-- Fórmula 1: F = (Celsius * 1.8) + 32  
+1 — Calcular juros simples
 
-- Fórmula 2: K = Celsius + 273.15
+2 — Calcular montante com juros compostos
 
-**Uni6Exe14.java** Em sistemas de design, edição de imagens e análise de dados visuais, as cores secundárias são geradas a partir da combinação de cores primárias. Crie um sistema que simule a mistura de tintas com base nas três cores primárias tradicionais: Azul, Amarelo e Vermelho. Desenvolva um programa em Java que armazene em um vetor de String com duas posições as cores informadas pelo usuário. No programa principal, o sistema deve pedir para o usuário digitar duas cores primárias diferentes e guardá-las nesse vetor. Com base nas cores informadas, o programa principal deve acionar a sub-rotina correspondente, passar o vetor original como parâmetro e, por fim, imprimir na tela o nome da cor resultante obtida com a mistura.
+0 — Encerrar o programa
 
-- String descobrirMistura(String[] cores): deve receber o vetor com as duas cores digitadas, analisar a combinação e retornar uma única String com o nome da cor gerada. 
+O programa deverá solicitar a opção escolhida, ler os dados necessários e chamar o subprograma correspondente. Cada operação deverá ser implementada em um método próprio, que receberá os parâmetros necessários e retornará o resultado.
 
-- Azul e Vermelho deve retornar "Roxo". 
+Utilize as seguintes especificações:
 
-- Azul e Amarelo deve retornar "Verde". 
+a) Juros simples: receber o capital inicial \(C\), a taxa de juros \(i\) por período e o número de períodos \(t\), calculando o montante pela fórmula \(M=C(1+it)\).
 
-- Amarelo e Vermelho deve retornar "Laranja".
+b) Juros compostos: receber o capital inicial, a taxa por período e o número de períodos, calculando o montante pela fórmula \(M=C(1+i)^t\).
 
-- Se o usuário digitar alguma cor que não seja primária ou repetir a mesma cor nas duas posições, a função deve retornar a mensagem "Combinação inválida".
+O programa deverá apresentar os resultados com duas casas decimais, validar os dados necessários para cada operação e retornar ao menu após cada cálculo. A opção zero deverá encerrar o programa.
 
-**Uni6Exe15.java** A equipe de veterinários e nutricionistas de um zoológico precisa monitorar de perto a alimentação dos animais para garantir que todos recebam os nutrientes adequados. Cada espécie possui uma quantidade diária recomendada de ração (em quilos). Porém, dependendo do comportamento ou do estado de saúde do animal, os tratadores precisam atualizar esses valores no sistema de forma rápida. Desenvolva um programa que armazene os nomes das espécies e a quantidade diária de ração de cinco animais do zoológico. Com base no animal informado pelo usuário, crie sub-rotinas para: 
+Para os cálculos de juros, considere a taxa expressa em formato decimal: por exemplo, 5% corresponde a \(0{,}05\). Na variação percentual, o valor inicial deverá ser diferente de zero.
 
-- Verificar se o animal está cadastrado. 
+**Uni6Exe15.java** Faça um programa que apresente repetidamente o seguinte menu:
+SIMULADOR DE FINANCIAMENTO
 
-- Caso o animal esteja cadastrado, atualizar a quantidade de ração diária conforme informado pelo usuário. 
+1 — Calcular o valor da prestação mensal
 
-Ao final, o programa deverá imprimir o nome de cada animal e a respectiva quantidade de ração em kg. 
+2 — Calcular o custo total do financiamento
+
+3 — Simular a amortização de uma dívida
+
+4 — Comparar dois financiamentos
+
+0 — Encerrar o programa
+
+O programa deverá solicitar a opção desejada e chamar o método correspondente. Cada operação deverá ser implementada em um subprograma específico, com parâmetros e valores de retorno adequados.
+
+Considere as seguintes especificações:
+
+a) Valor da prestação mensal: receber o valor financiado, a taxa de juros mensal e a quantidade de prestações, calculando o valor da prestação fixa pela fórmula:
+\[
+P = \frac{C \cdot i(1+i)^n}{(1+i)^n-1}
+\]
+
+Em que \(C\) representa o capital financiado, \(i\) a taxa de juros mensal em formato decimal e \(n\) a quantidade de prestações. Se a taxa for zero, a prestação será \(C/n\).
+
+b) Custo total do financiamento: receber o valor da prestação e a quantidade de prestações, retornando o valor total pago e permitindo calcular a diferença entre esse total e o capital originalmente financiado.
+
+c) Simulação da amortização: receber o valor financiado, a taxa de juros mensal, a quantidade de prestações e o valor da prestação. Utilizando uma estrutura de repetição, apresentar para cada mês:
+- número da prestação;
+- saldo devedor no início do mês;
+- juros calculados sobre o saldo devedor;
+- valor amortizado;
+- saldo devedor após o pagamento.
+A amortização mensal será calculada pela diferença entre a prestação e os juros do período. O saldo devedor será reduzido pelo valor amortizado.
+
+d) Comparação de financiamentos: receber os dados de dois financiamentos e calcular o valor das prestações e o custo total de cada um. Ao final, informar qual alternativa apresenta o menor custo total e qual a diferença entre os custos.
+
+O menu deverá permanecer em execução até que o usuário escolha a opção zero. O programa deverá validar os dados de entrada e tratar situações como valores não positivos para o capital ou para a quantidade de prestações.
+
+**Uni6Exe16.java** Faça um programa que apresente repetidamente o seguinte menu:
+PLANEJAMENTO DE VIAGENS
+
+1 — Calcular o custo de combustível de um percurso
+
+2 — Calcular o custo de hospedagem
+
+3 — Calcular o custo total de uma viagem
+
+4 — Comparar duas opções de viagem
+
+0 — Encerrar o programa
+
+O programa deverá solicitar a opção desejada e chamar o método correspondente. O menu deverá ser apresentado novamente após cada operação, até que o usuário escolha a opção zero.
+
+Implemente os métodos conforme as especificações:
+
+a) Custo de combustível: receber a distância do percurso, o consumo médio do veículo em quilômetros por litro e o preço do litro de combustível. Retornar o custo estimado de combustível para percorrer a distância informada.
+
+b) Custo de hospedagem: receber o preço da diária e a quantidade de noites. Retornar o custo total da hospedagem.
+
+c) Custo total da viagem: receber os dados relativos ao transporte e à hospedagem, chamar os métodos desenvolvidos nos itens anteriores e retornar o custo total da viagem, incluindo combustível e hospedagem.
+
+d) Comparação de viagens: receber os dados de duas opções de viagem e chamar o método de cálculo do custo total para cada uma delas. Apresentar os custos calculados, informar qual opção é mais econômica e indicar a diferença entre os valores.
+
+O programa deverá validar os dados informados, evitando valores negativos ou inválidos para distância, consumo, preço do combustível, diária e quantidade de noites.
+Requisito de implementação
+O método do item c deverá chamar os métodos dos itens a e b. Da mesma forma, o método do item d deverá chamar o método do item c para calcular os custos das duas alternativas.
+
+Não duplique os cálculos já implementados nos outros métodos. Cada método deverá ter uma responsabilidade específica, e o programa principal deverá controlar o menu e apresentar os resultados.
