@@ -4,7 +4,7 @@ public class Uni5Exe15 {
 
     public static void main(String[] args) {
         Scanner tec = new Scanner(System.in);
-
+     
         //ler o nome - que é o flag
         System.out.println("Digite o nome do aluno");
         String nome = tec.next();
