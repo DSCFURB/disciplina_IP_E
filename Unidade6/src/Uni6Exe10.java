@@ -7,24 +7,10 @@ public class Uni6Exe10 {
         int soma = 0;
         int numero = 0;
         for (int i = 0; i < hexa.length(); i++) {
-            //pegar o numero realtivo ao caracter
-            switch (hexa.charAt(i)) {
-                case '0' : numero = 0; break; 
-                case '1' : numero = 1; break; 
-                case '2' : numero = 2; break; 
-                case '3' : numero = 3; break; 
-                case '4' : numero = 4; break; 
-                case '5' : numero = 5; break; 
-                case '6' : numero = 6; break; 
-                case '7' : numero = 7; break; 
-                case '8' : numero = 8; break; 
-                case '9' : numero = 9; break; 
-                case 'A' : numero = 10; break; 
-                case 'B' : numero = 11; break; 
-                case 'C' : numero = 12; break; 
-                case 'D' : numero = 13; break; 
-                case 'E' : numero = 14; break; 
-                case 'F' : numero = 15; break; 
+            if (hexa.charAt(i) >= '0' && hexa.charAt(i) <= '9') {
+                numero = hexa.charAt(i) - '0';
+            } else {
+                numero = hexa.charAt(i) - 'A' + 10;
             }
             //calcular a potencia
             soma += numero * Math.pow(16, hexa.length()-i-1);
