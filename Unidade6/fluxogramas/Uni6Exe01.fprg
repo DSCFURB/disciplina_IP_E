@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Uni6Exe01"/>
+        <attribute name="authors" value="mclopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-27 07:18:23 "/>
+        <attribute name="created" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMTAtMjc7IjA2OjU1OjA0ICI7MjM0NQ=="/>
+        <attribute name="edited" value="bWNsb3BlcztOQi0wNTgxOzIwMjYtMTAtMjc7IjA3OjE4OjIzICI7MTsyNDU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="frase, letra" type="String" array="False" size=""/>
+            <declare name="contLetras" type="Integer" array="False" size=""/>
+            <input variable="frase"/>
+            <input variable="letra"/>
+            <assign variable="contLetras" expression="contarLetras (frase, letra)"/>
+            <output expression="contLetras" newline="True"/>
+        </body>
+    </function>
+    <function name="contarLetras" type="Integer" variable="contLetras">
+        <parameters>
+            <parameter name="frase" type="String" array="False"/>
+            <parameter name="letra" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="contLetras, i" type="Integer" array="False" size=""/>
+            <assign variable="contLetras" expression="0"/>
+            <for variable="i" start="0" end="Len(frase) - 1" direction="inc" step="1">
+                <if expression="letra = Char (frase, i)">
+                    <then>
+                        <assign variable="contLetras" expression="contLetras + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
