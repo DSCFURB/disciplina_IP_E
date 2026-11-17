@@ -1,3 +1,5 @@
+2026/2
+
 PROJETO 1 – EXPEDIÇÃO ARQUEOLÓGICA
 Em uma expedição arqueológica, um pesquisador deverá explorar diferentes pontos de uma região para encontrar artefatos históricos. Para representar a região, será utilizado um vetor de 30 posições, numeradas de 0 a 29.
 Cada posição poderá conter um dos seguintes elementos:
