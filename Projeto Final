@@ -1,157 +1,100 @@
-PROJETO 1
-Em uma versão simplificada do jogo Batalha Naval, o mar é representado por um vetor de 30 posições numeradas de 0 a 29.
-Cada posição do vetor pode conter:
-•	0: água;
-•	1: parte de um submarino;
-•	2: parte de um contratorpedeiro;
-•	3: parte de um cruzador.
-As embarcações ocupam posições consecutivas do vetor e possuem os seguintes tamanhos:
-•	submarino: ocupa 1 posição;
-•	contratorpedeiro: ocupa 2 posições consecutivas;
-•	cruzador: ocupa 3 posições consecutivas.
-Considere que:
-•	existem exatamente 2 submarinos;
-•	existem exatamente 2 contratorpedeiros;
-•	existe exatamente 1 cruzador;
-•	embarcações do mesmo tipo não podem ocupar posições vizinhas entre si;
-•	embarcações de tipos diferentes podem ocupar posições vizinhas;
-•	não existem sobreposições de embarcações.
-O mapa do jogo deve ser gerado automaticamente pelo programa e deve ser reiniciado a cada nova partida.
-Para gerar uma posição aleatória para colocar uma embarcação, utilize o comando:
-•	int posicao = (int)(Math.random() * 30);
-Não se esqueça das restrições anteriores sobre embarcações iguais não poderem estar uma ao lado da outra ou sobre já ter uma embarcação ou parte dela em algum lugar do vetor.
-O programa deve apresentar continuamente o seguinte menu:
-1 - Realizar tiro
-2 - Reiniciar partida
-3 - Encerrar jogo
-Na Opção 1 – Realizar tiro, deve ser solicitado ao jogador a posição desejada para o tiro e informar um dos seguintes resultados: “Água”, “Acertou submarino”, “Acertou contratorpedeiro”, “Acertou cruzador”. 
-O jogador terá no máximo 15 tiros no final dos quais será declarado perdedor se não afundou todas as embarcações. Caso consiga afundar todas as embarcações antes dos 15 tiros, informe que ele venceu o jogo.
-Uma embarcação somente é considerada afundada quando todas as posições que ela ocupa forem atingidas. Assim, quando uma embarcação for afundada, o programa deve informar ao jogador. 
-Na Opção 2 – Reiniciar partida, uma nova partida deve ser iniciada, gerando-se um novo mapa, restaurando a quantidade de tiros disponíveis e removendo todos os acertos da partida anterior.
-Na Opção 3 – Encerrar jogo, informe a quantidade de partidas vencidas e a quantidade de partidas perdidas.
-O programa deve obrigatoriamente utilizar subprogramas para:
-•	gerar o mapa do jogo;
-•	processar um tiro;
-•	verificar se uma embarcação foi afundada;
-•	verificar se a partida terminou; 
+2026/2
+
+PROJETO 1 – EXPEDIÇÃO ARQUEOLÓGICA
+Em uma expedição arqueológica, um pesquisador deverá explorar diferentes pontos de uma região para encontrar artefatos históricos. Para representar a região, será utilizado um vetor de 30 posições, numeradas de 0 a 29.
+Cada posição poderá conter um dos seguintes elementos:
+•	0: terreno sem ocorrência;
+•	1: fonte de energia;
+•	2: artefato arqueológico;
+•	3: área de risco;
+•	-1: posição já explorada
+O mapa deverá ser gerado automaticamente pelo programa e conter exatamente:
+•	6 fontes de energia;
+•	4 artefatos arqueológicos;
+•	8 áreas de risco;
+•	12 posições sem ocorrência.
+A distribuição dos elementos deverá ser aleatória, sem sobreposição. Para gerar uma posição aleatória, utilize:
+int posicao = (int)(Math.random() * 30);
+O pesquisador inicia cada partida com 20 unidades de energia e deverá encontrar os 4 artefatos para vencer a expedição.
+O programa deverá apresentar continuamente o seguinte menu:
+1 – Iniciar expedição
+2 - Encerrar jogo
+Na Opção 1 – Iniciar expedição, deverá ser iniciada uma partida, gerando o mapa com os elementos alocados. Em seguida, o jogador deverá informar a posição que deseja explorar, informando um número de 0 a 29. Cada posição poderá ser explorada apenas uma vez durante a partida. Caso escolha uma posição já explorada, o programa deverá informar a situação e solicitar outra posição. O número de explorações é limitado a 12 a cada expedição. Entretanto, tentativas de selecionar posições já exploradas não serão contabilizadas como exploração.
+A cada exploração, inicialmente deve ser verificada se a posição já foi explorada ou não. Em seguida, deverá ser aplicado o efeito correspondente ao elemento encontrado na posição:
+•	Terreno sem ocorrência: informar que nada foi encontrado e descontar uma unidade de energia;
+•	Fonte de energia: acrescentar 5 unidades de energia ao saldo do jogador. Caso a energia ultrapasse 30 pontos, ela deve ser ajustada para esse limite;
+•	Artefato arqueológico: informar que um artefato foi encontrado e acrescentar um ao total de artefatos coletados.
+•	Área de risco: informar a ocorrência e retirar 4 unidades de energia do saldo do jogador.
+Após a exploração, deve ser atribuído o valor de -1 para a posição indicada.
+A partida termina quando ocorrer uma das seguintes situações:
+•	O jogador encontrar os 4 artefatos arqueológicos, vencendo a expedição.
+•	A energia do jogador chegar a zero ou menos, perdendo a expedição.
+•	O jogador explorar 12 posições sem encontrar os 4 artefatos, perdendo a expedição.
+Ao término da partida, o programa deverá informar se o jogador venceu ou perdeu a expedição, o número de artefatos encontrados e a energia resultante, voltando ao menu de opções.
+Na Opção 2 – Encerrar jogo, informar:
+•	quantidade de expedições vencidas;
+•	quantidade de expedições perdidas;
+•	quantidade total de artefatos encontrados em todas as partidas.
+O programa deverá obrigatoriamente utilizar subprogramas para:
+•	gerar o mapa da expedição;
+•	inicializar os dados da partida;
+•	explorar uma posição;
+•	verificar se uma posição já foi explorada;
+•	atualizar a energia do jogador;
+•	verificar se a expedição terminou;
 •	outros a critério do programador.
 ATENÇÃO:
 •	Utilize apenas vetores unidimensionais.
 •	Não utilize variáveis do tipo String.
 •	Não utilize coleções (ArrayList, LinkedList etc.).
 •	Não utilize orientação a objetos além da classe principal do programa.
-•	Considere que todas as entradas informadas pelo usuário são válidas.
- 
-PROJETO 2
-Em uma versão simplificada do jogo 21, um baralho é representado por um vetor de 52 posições. O baralho deve conter exatamente:
-•	4 cartas de valor 1;
-•	4 cartas de valor 2;
-•	4 cartas de valor 3;
-•	...
-•	4 cartas de valor 13.
-Assim, o vetor possui 52 posições e cada valor de 1 a 13 aparece exatamente quatro vezes. O programa deve gerar automaticamente o baralho e embaralhá-lo antes do início de cada partida.
-Para embaralhar o vetor, troque os valores de duas posições escolhidas aleatoriamente. Para gerar posições aleatórias utilize o comando:
-int posicao = (int)(Math.random() * 52);
-O processo de embaralhar deve considerar, no mínimo, 50 trocas de valores.
-O programa deve apresentar continuamente o seguinte menu:
-1 - Virar carta
-2 - Parar partida
-3 - Encerrar jogo
-Na Opção 1 – Virar carta, o jogador deve informar a posição da qual deseja retirar a carta e o programa deve informar o valor da carta daquela posição. Caso o jogador já tenha virado cartas anteriormente, o valor da nova carta deve ser somado ao valor acumulado das cartas viradas anteriormente. Não é permitido ao jogador informar a mesma posição duas vezes em uma mesma partida. Caso isso aconteça, o programa deve informar a situação e solicitar uma nova posição.
-Considere que:
-•	cartas de 1 a 10 valem seu próprio valor. No caso do jogador ter 10 pontos e retirar a carta 1, esta passa a valer 11 pontos, de modo que ele irá somar 21 pontos;
-•	cartas 11, 12 e 13 valem 10 pontos.
-O objetivo do jogador é obter o maior número de pontos possível sem ultrapassar 21 pontos. Assim, a cada carta retirada:
-•	se os pontos somados forem exatamente 21, o jogador deve ser informado que ele venceu a partida e uma nova partida deve ser iniciada, atribuindo a ele mais 200 moedas;
-•	se os pontos somados ultrapassarem 21, o jogador deve ser informado que ele perdeu a partida e uma nova partida deve ser iniciada, retirando dele 100 moedas;
-•	se os pontos somados estiverem abaixo de 21, o jogador poderá virar uma nova carta (opção 1) ou parar a partida (opção 2). Caso escolha parar a partida, o número de moedas obtidas será calculado conforme a tabela a seguir:
-| Soma das cartas | Moedas da partida   |
-| --------------- | ------------------- |
-| 19 ou 20        | + 100 moedas        |
-| 17 ou 18        | + 50 moedas         |
-| Menor que 17    | 0 moedas            |
-| --------------- | ------------------- |
+•	Considere que todas as entradas informadas pelo usuário são válidas, exceto a escolha de posições já exploradas, que deverá ser tratada conforme o enunciado.
 
-Na Opção 2 – Parar partida, o jogador encerra voluntariamente a partida, devendo ser informado o número de moedas obtidas. O baralho deve ser novamente embaralhado com todas as cartas e a soma das cartas deve ser zerada.
-Na Opção 3 – Encerrar jogo, informe:
-•	quantidade de partidas jogadas;
-•	quantidade de partidas vencidas (número de moedas conquistadas maior ou igual a 50);
-•	quantidade de partidas perdidas (número de moedas conquistadas menor do que 50);
-•	quantidade de vezes em que o jogador fez exatamente 21 pontos;
-•	número de moedas total acumulado.
-O programa deve obrigatoriamente utilizar subprogramas para:
-•	gerar o baralho;
-•	embaralhar o baralho;
-•	retirar uma carta;
-•	calcular a soma de pontos da partida;
-•	verificar se a partida terminou.
+ PROJETO 2 – LEILÃO DE RELÍQUIAS
+Em um leilão de relíquias históricas, um participante deverá disputar a aquisição de diferentes peças com um sistema controlado pelo computador.
+As relíquias disponíveis em cada rodada de leilão serão representadas por três vetores de 10 posições:
+•	um vetor contendo o valor estimado de cada relíquia;
+•	um vetor contendo o maior lance apresentado pelo computador para cada relíquia;
+•	um vetor booleano indicando a situação de cada relíquia (true caso tenha sido negociada e false caso ainda esteja disponível para disputa.
+Os valores estimados das relíquias e os lances do computador deverão ser gerados automaticamente no início de cada rodada.
+O valor estimado de cada relíquia deverá ser um número inteiro aleatório entre 80 e 200. O lance do computador deverá ser um número inteiro aleatório entre 20 e 150.
+Para gerar os valores estimados das relíquias, utilize:
+int valor = (int)(Math.random() * 121) + 80;
+Para os lances do computador, utilize:
+int lance = (int)(Math.random() * 131) + 20;
+O participante inicia cada rodada com 500 créditos disponíveis para realizar seus lances.
+O programa deverá apresentar continuamente o seguinte menu:
+1 – Iniciar leilão
+2 - Encerrar jogo
+Na Opção 1 – Iniciar leilão, deverão ser preenchidos, respectivamente, o vetor com o valor das relíquias, o vetor com os lances do computador e o valor false na situação das relíquias, bem como deverão ser fornecidos 500 créditos ao participante para que ele possa fazer suas ofertas. 
+Em seguida, o participante deverá informar a posição da relíquia que deseja disputar (de 0 a 9) e obterá a informação sobre o valor da relíquia, não podendo ser informado o lance do computador. Em seguida ele deve informar o valor de seu lance. Cada relíquia poderá ser disputada apenas uma vez, devendo isto ser indicado no vetor de situação da relíquia, o qual deverá receber true na posição da relíquia. Caso o participante escolha uma relíquia que já tenha sido disputada, o programa deverá informar a situação e solicitar outra posição.
+O valor do lance informado deverá ser maior que zero e não poderá ultrapassar a quantidade de créditos disponíveis do participante. Após receber o lance, o programa deverá comparar seu valor com o lance apresentado pelo computador:
+•	Se o lance do participante for maior que o lance do computador, ele vencerá a disputa e adquirirá a relíquia, sendo o valor do lance descontado de seus créditos, independentemente de ser maior ou menor que o valor da relíquia.
+•	Se o lance do participante for menor ou igual ao lance do computador, ele perderá a disputa e a relíquia será adquirida pelo computador. Neste caso, nada é descontado do participante e ele recebe 50 créditos para as próximas disputas. Mas atenção: nunca o participante poderá ter mais do que 500 créditos. Caso o número de crédito ultrapasse 500, ele deve ser limitado a este valor.
+Ao final de cada disputa, o programa deverá informar:
+•	o lance apresentado pelo computador;
+•	o vencedor da disputa;
+•	a diferença – positiva, zero ou negativa – entre o valor efetivamente pago pelo computador ou pelo participante e o valor estimado da relíquia. Por exemplo. se o valor vencedor for 150 e o estimado da relíquia for 180, informar que foram pagos 30 créditos a menos pela relíquia. No caso de ter sido pago 220 para uma relíquia com valor estimado de 200, informar que foram pagos 20 créditos a mais;
+•	o saldo de créditos disponível;
+•	o patrimônio acumulado pelo participante que é a soma do valor das relíquias adquiridas;
+O número de disputas de cada leilão é limitado a 5 ou quando o participante tiver zero créditos, ou seja, quando ele não tiver mais como fazer ofertas pelos produtos. Assim, deve ser informado que o programa alcançou uma dessas condições e o leilão deve ser encerrado, sendo apresentado o menu novamente.
+Na Opção 2 – Encerrar jogo, informar:
+•	quantidade de leilões realizados;
+•	quantidade total de relíquias adquiridas pelo participante em todos os leilões;
+•	percentual de disputas vencidas pelo participante em todos os leilões;
+•	o maior patrimônio acumulado pelo participante em um leilão;
+•	quantidade de leilões que teve que ser finalizado antes das cinco disputas em função do participante ter ficado sem créditos disponíveis.
+O programa deverá obrigatoriamente utilizar subprogramas para:
+•	gerar os valores estimados das relíquias;
+•	gerar os lances do computador;
+•	inicializar a rodada de leilão;
+•	realizar uma disputa;
+•	atualizar os créditos disponíveis;
+•	verificar se a rodada terminou;
 •	outros a critério do programador.
 ATENÇÃO:
 •	Utilize apenas vetores unidimensionais.
 •	Não utilize variáveis do tipo String.
 •	Não utilize coleções (ArrayList, LinkedList etc.).
 •	Não utilize orientação a objetos além da classe principal do programa.
-•	Considere que todas as entradas informadas pelo usuário são válidas.
- 
-PROJETO 3
-Em uma versão simplificada do jogo Senha, o computador deve gerar secretamente uma combinação composta por 6 posições, armazenada em um vetor. Cada posição da senha deve conter um valor inteiro entre 1 e 6, sendo permitidos valores repetidos.
-O programa deve gerar automaticamente a senha antes do início de cada partida. Para gerar números aleatórios utilize o comando:
-int valor = (int)(Math.random() * 6) + 1;
-O jogador possui até 8 tentativas para descobrir a senha.
-O programa deve apresentar continuamente o seguinte menu:
-1 - Fazer tentativa
-2 - Desistir da partida
-3 - Encerrar jogo
-Na Opção 1 – Fazer tentativa, o jogador deve informar os 6 valores de sua tentativa. Após cada tentativa, o programa deve comparar a tentativa com a senha secreta e informar:
-V: quantidade de valores corretos na posição correta;
-Q: quantidade de valores corretos em posições incorretas.
-Por exemplo:
-Senha:		Tentativa:
-2 5 1 3 4 6	2 1 4 3 6 5
-Resultado:
-V = 2			Q = 4
-Neste exemplo, os valores 2 e 3 estão corretos e nas posições corretas e os valores 1, 4, 5 e 6 existem na senha, mas estão em posições diferentes.
-Como a senha pode conter valores repetidos, cada valor da senha pode ser utilizado apenas uma vez na contabilização dos valores V e Q.
-Por exemplo:
-Senha:		Tentativa:
-1 1 2 3 3 5	1 2 1 6 3 3
-Resultado:
-V = 2			Q = 3
-Após cada tentativa, o programa também deve informar:
-•	quantidade de valores V;
-•	quantidade de valores Q;
-•	quantidade de tentativas restantes.
-Se o jogador obtiver V = 6, a senha foi descoberta, a partida termina e o jogador recebe as moedas de acordo com a tabela a seguir:
-Tentativa em que acertou	Moedas recebidas
-1ª tentativa				+200
-2ª tentativa				+150
-3ª tentativa				+100
-4ª tentativa				+75
-5ª tentativa				+50
-6ª tentativa				+25
-7ª ou 8ª tentativa			+10
-
-Caso o jogador utilize as 8 tentativas sem descobrir a senha ele perde 100 moedas, a senha deve ser exibida e uma nova partida deve ser iniciada.
-Na Opção 2 – Desistir da partida, o jogador encerra voluntariamente a partida e o programa deve exibir a senha. A partida é considerada perdida, o jogador perde 80 moedas e uma nova partida deve ser iniciada.
-Na Opção 3 – Encerrar jogo, informe:
-•	quantidade de partidas jogadas;
-•	quantidade de partidas vencidas;
-•	quantidade de partidas perdidas;
-•	quantidade total de tentativas realizadas;
-•	quantidade de vezes que o jogador descobriu a senha na primeira tentativa;
-•	número total de moedas acumuladas.
-A solução deve obrigatoriamente utilizar subprogramas para:
-•	gerar a senha;
-•	processar uma tentativa;
-•	calcular a quantidade de valores V;
-•	calcular a quantidade de valores Q;
-•	verificar se a senha foi descoberta;
-•	calcular a quantidade de moedas da partida;
-•	verificar se a partida terminou;
-•	outros a critério do programador.
-ATENÇÃO
-•	Utilize apenas vetores unidimensionais.
-•	Não utilize variáveis do tipo String.
-•	Não utilize coleções (ArrayList, LinkedList etc.).
-•	Não utilize orientação a objetos além da classe principal do programa.
-•	Considere que todas as entradas informadas pelo usuário são válidas.
+•	Considere que todas as entradas informadas pelo usuário são válidas, exceto a escolha de relíquias já disputadas, que deverá ser tratada conforme o enunciado.
