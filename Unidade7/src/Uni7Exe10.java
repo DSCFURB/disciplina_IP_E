@@ -73,6 +73,26 @@ public class Uni7Exe10 {
         }
     }
 
+    /**
+     * Ordenação do vetor com o método da bolha não otimizado
+     * @param vetor
+     * @param q
+     */
+    private void ordenarValores (int[] vetor, int q) {
+        for (int j = 0; j <= q - 1; j++) {
+            for (int i = 0; i <= q - 2; i++) {
+                //testar se o valor atual é maior que o seguinte
+                if (vetor[i] > vetor[i + 1]) {
+                    //troca os valores de posição
+                    int aux = vetor[i];
+                    vetor[i] = vetor[i + 1];
+                    vetor[i + 1] = aux;
+                }
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
         Uni7Exe10 exe10 = new Uni7Exe10();
 
@@ -148,6 +168,10 @@ public class Uni7Exe10 {
                 case 5 :
                     exe10.mostrarValores (vetor, q); //mostra o conteúdo do vetor
                     break; 
+                case 6 :
+                    exe10.ordenarValores (vetor, q); //ordenar os valores do vetor
+                    System.out.println("os valores foram ordenados");
+                    break;
                 case 7 :
                     exe10.inverterValores (vetor, q); //inverte os valores do vetor
                     System.out.println("Os valores foram trocados de posição.");
