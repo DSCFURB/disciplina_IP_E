@@ -200,23 +200,23 @@ c) calcule e informe a amplitude térmica de cada dia, correspondente à diferen
 
 d) informe quantos dias apresentaram amplitude térmica superior à do dia anterior. Implemente um subprograma que receba o vetor de amplitudes e retorne essa quantidade;
 
-e) informe o número do dia que apresentou a maior amplitude térmica. Implemente um subprograma que receba o vetor de amplitudes e retorne o número do dia.
-Exemplo de entrada
-Dias = 6
-Mínima Máxima
-18 28
-20 27
-19 31
-21 25
-17 29
-22 30
-
-Exemplo de saída
-Amplitudes térmicas:
-10.0 7.0 12.0 4.0 12.0 8.0
-Dias com amplitude superior a do dia anterior: 2
-Dia com maior amplitude térmica: 2
-
+e) informe o número do dia que apresentou a maior amplitude térmica. Implemente um subprograma que receba o vetor de amplitudes e retorne o número do dia.  
+Exemplo de entrada  
+Dias = 6  
+Mínima Máxima  
+18 28  
+20 27  
+19 31  
+21 25  
+17 29  
+22 30  
+  
+Exemplo de saída  
+Amplitudes térmicas:  
+10.0 7.0 12.0 4.0 12.0 8.0  
+Dias com amplitude superior a do dia anterior: 2  
+Dia com maior amplitude térmica: 2  
+  
 
 **Uni7Exe20.java**  Uma equipe de voleibol registrou os resultados dos sets disputados ao longo de um campeonato. Para cada set foram armazenados, em dois vetores, os pontos marcados pela equipe e os pontos marcados pelo adversário, respectivamente. Considere que uma partida de voleibol termina quando uma das equipes vence três sets. Assim, uma partida pode ter três, quatro ou cinco sets. Os dados armazenados nos vetores correspondem a partidas completas, em sequência, sem interrupções. Com base nisso, elabore um programa que:
 
@@ -230,24 +230,24 @@ d) informe o placar final de cada partida. Implemente um subprograma que receba 
 
 e) informe o número da partida em que a equipe marcou a maior quantidade total de pontos, considerando a soma dos pontos marcados em todos os sets daquela partida. Implemente um subprograma que receba os vetores e a quantidade total de sets e retorne uma String contendo o número da partida.
 
-  Exemplo de entrada
-  Sets = 12
-  Pontos Equipe - Pontos Adversário
-  25 20
-  22 25
-  25 18
-  25 21
-  20 25
-  25 22
-  23 25
-  25 19
-  18 25
-  25 20
-  25 22
-  25 18
-
-  Exemplo de saída
-  Quantidade de partidas disputadas: 3
-  Quantidade de partidas vencidas: 2
-  Placar das partidas: 3x1 2x3 3x0
-  Partida com maior pontuação total da equipe: 2
+  Exemplo de entrada  
+  Sets = 12  
+  Pontos Equipe - Pontos Adversário  
+  25 20  
+  22 25  
+  25 18  
+  25 21  
+  20 25  
+  25 22  
+  23 25  
+  25 19  
+  18 25  
+  25 20  
+  25 22  
+  25 18  
+  
+  Exemplo de saída  
+  Quantidade de partidas disputadas: 3  
+  Quantidade de partidas vencidas: 2  
+  Placar das partidas: 3x1 2x3 3x0  
+  Partida com maior pontuação total da equipe: 2  
