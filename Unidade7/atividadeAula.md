@@ -230,24 +230,24 @@ d) informe o placar final de cada partida. Implemente um subprograma que receba 
 
 e) informe o número da partida em que a equipe marcou a maior quantidade total de pontos, considerando a soma dos pontos marcados em todos os sets daquela partida. Implemente um subprograma que receba os vetores e a quantidade total de sets e retorne uma String contendo o número da partida.
 
-Exemplo de entrada
-Sets = 12
-Pontos Equipe - Pontos Adversário
-25 20
-22 25
-25 18
-25 21
-20 25
-25 22
-23 25
-25 19
-18 25
-25 20
-25 22
-25 18
+  Exemplo de entrada
+  Sets = 12
+  Pontos Equipe - Pontos Adversário
+  25 20
+  22 25
+  25 18
+  25 21
+  20 25
+  25 22
+  23 25
+  25 19
+  18 25
+  25 20
+  25 22
+  25 18
 
-Exemplo de saída
-Quantidade de partidas disputadas: 3
-Quantidade de partidas vencidas: 2
-Placar das partidas: 3x1 2x3 3x0
-Partida com maior pontuação total da equipe: 2
+  Exemplo de saída
+  Quantidade de partidas disputadas: 3
+  Quantidade de partidas vencidas: 2
+  Placar das partidas: 3x1 2x3 3x0
+  Partida com maior pontuação total da equipe: 2
