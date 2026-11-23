@@ -212,10 +212,11 @@ Mínima Máxima
 22 30
 
 Exemplo de saída
-Amplitudes termicas:
+Amplitudes térmicas:
 10.0 7.0 12.0 4.0 12.0 8.0
 Dias com amplitude superior a do dia anterior: 2
-Dia com maior amplitude termica: 2
+Dia com maior amplitude térmica: 2
+
 
 **Uni7Exe20.java**  Uma equipe de voleibol registrou os resultados dos sets disputados ao longo de um campeonato. Para cada set foram armazenados, em dois vetores, os pontos marcados pela equipe e os pontos marcados pelo adversário, respectivamente. Considere que uma partida de voleibol termina quando uma das equipes vence três sets. Assim, uma partida pode ter três, quatro ou cinco sets. Os dados armazenados nos vetores correspondem a partidas completas, em sequência, sem interrupções. Com base nisso, elabore um programa que:
 
@@ -250,4 +251,3 @@ Quantidade de partidas disputadas: 3
 Quantidade de partidas vencidas: 2
 Placar das partidas: 3x1 2x3 3x0
 Partida com maior pontuação total da equipe: 2
-
