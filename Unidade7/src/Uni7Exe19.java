@@ -85,6 +85,12 @@ public class Uni7Exe19 {
         exe19.lerTemperaturas(minimas, maximas);
         //calcular as amplitudes
         amplitudes = exe19.calcularAmplitudes (minimas, maximas);
+        //escrever as amplitudes
+        for (float valor : amplitudes) { //equivale ao for (int i =0 ...)
+            System.out.printf("%.1f ", valor);
+        }
+        System.out.println("\n");
+
         //informar quantidade de dias com ampitude maior que o anterior
         System.out.println("Dias com amplitude térmica maior que a anterior = " +
                             exe19.calcularDias(amplitudes));
